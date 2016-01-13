@@ -1,0 +1,17 @@
+{
+  "hidden": false,
+  "name": "Untitled Folder",
+  "parent": [
+    "/",
+    "668df931-37ce-42a8-9604-cd89a9e627d2"
+  ],
+  "permission": {
+    "groups": {},
+    "owner": "admin",
+    "permissionForOthers": {
+      "readable": false,
+      "writable": false
+    }
+  },
+  "uuid": "41032702-06ed-45af-901e-b018950d8a88"
+}
