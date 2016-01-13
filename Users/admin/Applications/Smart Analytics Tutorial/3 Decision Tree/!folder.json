@@ -1,0 +1,17 @@
+{
+  "hidden": false,
+  "name": "3 Decision Tree",
+  "parent": [
+    "/Users/admin/Applications/Smart Analytics Tutorial",
+    "8fd3caca-766c-42bd-bb08-f7255cb18e72"
+  ],
+  "permission": {
+    "groups": {},
+    "owner": "admin",
+    "permissionForOthers": {
+      "readable": false,
+      "writable": false
+    }
+  },
+  "uuid": "82e7a576-e4dc-4e51-b856-a087633d018b"
+}
