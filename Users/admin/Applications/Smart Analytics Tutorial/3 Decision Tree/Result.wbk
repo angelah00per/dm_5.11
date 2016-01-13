@@ -1,0 +1,408 @@
+{
+  "_version": "5.11.2",
+  "dataPermission": {
+    "groups": {},
+    "owner": "admin",
+    "permissionForOthers": false
+  },
+  "errorHandling": {
+    "maxLogErrors": 1000,
+    "mode": "IGNORE"
+  },
+  "file": {
+    "createdAt": "2016-01-13T15:15:31.155-08:00",
+    "description": "",
+    "extension": "wbk",
+    "folder": [
+      "/Users/admin/Applications/Smart Analytics Tutorial/3 Decision Tree",
+      "82e7a576-e4dc-4e51-b856-a087633d018b"
+    ],
+    "modifiedAt": "2016-01-13T15:15:31.162-08:00",
+    "name": "Result",
+    "permission": {
+      "groups": {},
+      "owner": "admin",
+      "permissionForOthers": {
+        "executable": false,
+        "readable": false,
+        "writable": false
+      },
+      "publiclyShared": false
+    },
+    "uuid": "05c7f44e-d5c5-4126-8407-f9139646b5a6"
+  },
+  "jobConfiguration": {
+    "dataRetentionPolicy": {
+      "_type": "PurgeAfter",
+      "minimumToKeep": 1
+    },
+    "hadoopProperties": {},
+    "logging": {
+      "properties": {}
+    },
+    "triggering": {
+      "_type": "ManualTriggering"
+    }
+  },
+  "notification": {
+    "emailsInCaseOfFailure": [],
+    "emailsInCaseOfSuccess": []
+  },
+  "sheets": [
+    {
+      "_type": "DataSourceReferenceSheet",
+      "uuid": "1a221cc8-7421-4229-92e7-d096964c72d8",
+      "columns": [
+        {
+          "id": "age",
+          "name": "age",
+          "position": 0
+        },
+        {
+          "id": "job",
+          "name": "job",
+          "position": 1
+        },
+        {
+          "id": "marital",
+          "name": "marital",
+          "position": 2
+        },
+        {
+          "id": "education",
+          "name": "education",
+          "position": 3
+        },
+        {
+          "id": "default",
+          "name": "default",
+          "position": 4
+        },
+        {
+          "id": "balance",
+          "name": "balance",
+          "position": 5
+        },
+        {
+          "id": "housing",
+          "name": "housing",
+          "position": 6
+        },
+        {
+          "id": "loan",
+          "name": "loan",
+          "position": 7
+        },
+        {
+          "id": "contact",
+          "name": "contact",
+          "position": 8
+        },
+        {
+          "id": "day",
+          "name": "day",
+          "position": 9
+        },
+        {
+          "id": "month",
+          "name": "month",
+          "position": 10
+        },
+        {
+          "id": "duration",
+          "name": "duration",
+          "position": 11
+        },
+        {
+          "id": "campaign",
+          "name": "campaign",
+          "position": 12
+        },
+        {
+          "id": "TimeBtwCampaigns",
+          "name": "TimeBtwCampaigns",
+          "position": 13
+        },
+        {
+          "id": "NumOfCalls",
+          "name": "NumOfCalls",
+          "position": 14
+        },
+        {
+          "id": "CampaignSuccess",
+          "name": "CampaignSuccess",
+          "position": 15
+        },
+        {
+          "id": "PurchasedProduct",
+          "name": "PurchasedProduct",
+          "position": 16
+        }
+      ],
+      "identifier": "7f1e31bf-2349-4bcb-b317-46ab1c701d95",
+      "kept": false,
+      "name": "Bank_data",
+      "position": 0
+    },
+    {
+      "_type": "DataMiningDecisionTreeSheet",
+      "leafPurityThreshold": 0.0010000000474974513,
+      "leafSizeThreshold": 2,
+      "maximumTreeDepth": 15,
+      "performPruning": true,
+      "targetAttributeColumn": [
+        "PurchasedProduct",
+        "PurchasedProduct",
+        16,
+        {
+          "type": "STRING"
+        }
+      ],
+      "validationSizeFraction": 0.25,
+      "includedColumns": [
+        [
+          "age",
+          "age",
+          0,
+          {
+            "type": "INTEGER"
+          }
+        ],
+        [
+          "job",
+          "job",
+          1,
+          {
+            "type": "STRING"
+          }
+        ],
+        [
+          "marital",
+          "marital",
+          2,
+          {
+            "type": "STRING"
+          }
+        ],
+        [
+          "education",
+          "education",
+          3,
+          {
+            "type": "STRING"
+          }
+        ],
+        [
+          "default",
+          "default",
+          4,
+          {
+            "type": "STRING"
+          }
+        ],
+        [
+          "balance",
+          "balance",
+          5,
+          {
+            "type": "INTEGER"
+          }
+        ],
+        [
+          "housing",
+          "housing",
+          6,
+          {
+            "type": "STRING"
+          }
+        ],
+        [
+          "loan",
+          "loan",
+          7,
+          {
+            "type": "STRING"
+          }
+        ],
+        [
+          "contact",
+          "contact",
+          8,
+          {
+            "type": "STRING"
+          }
+        ],
+        [
+          "day",
+          "day",
+          9,
+          {
+            "type": "INTEGER"
+          }
+        ],
+        [
+          "month",
+          "month",
+          10,
+          {
+            "type": "STRING"
+          }
+        ],
+        [
+          "duration",
+          "duration",
+          11,
+          {
+            "type": "INTEGER"
+          }
+        ],
+        [
+          "campaign",
+          "campaign",
+          12,
+          {
+            "type": "INTEGER"
+          }
+        ],
+        [
+          "TimeBtwCampaigns",
+          "TimeBtwCampaigns",
+          13,
+          {
+            "type": "INTEGER"
+          }
+        ],
+        [
+          "NumOfCalls",
+          "NumOfCalls",
+          14,
+          {
+            "type": "INTEGER"
+          }
+        ],
+        [
+          "CampaignSuccess",
+          "CampaignSuccess",
+          15,
+          {
+            "type": "STRING"
+          }
+        ]
+      ],
+      "source": "Bank_data",
+      "columns": [
+        {
+          "id": "a03b38461935ab035971a0f22149368b",
+          "name": "age",
+          "position": 0
+        },
+        {
+          "id": "5f3b0e8b38511d765b72185183902610",
+          "name": "job",
+          "position": 1
+        },
+        {
+          "id": "b374b86943d99eae8ac5603b4d8845b7",
+          "name": "marital",
+          "position": 2
+        },
+        {
+          "id": "47c6710ba3569f86b16d6dae957da7b5",
+          "name": "education",
+          "position": 3
+        },
+        {
+          "id": "cd963c42802ad01b66f3dc3c0257c7cd",
+          "name": "default",
+          "position": 4
+        },
+        {
+          "id": "f3cb14d8c9021a631d52debac3097bd1",
+          "name": "balance",
+          "position": 5
+        },
+        {
+          "id": "02da44dee865b3deb6ece8fd657c031c",
+          "name": "housing",
+          "position": 6
+        },
+        {
+          "id": "23cbc322f53463137f0c5b001ae6c795",
+          "name": "loan",
+          "position": 7
+        },
+        {
+          "id": "32c8fc33597d0acc5165830482deaf36",
+          "name": "contact",
+          "position": 8
+        },
+        {
+          "id": "44f141f28c1f5f832aea4d38a66e7270",
+          "name": "day",
+          "position": 9
+        },
+        {
+          "id": "aec82573a6d3b51ed3bb5bd3e4173b60",
+          "name": "month",
+          "position": 10
+        },
+        {
+          "id": "63edac44539c752e543724d825c88a0c",
+          "name": "duration",
+          "position": 11
+        },
+        {
+          "id": "ac4fff330756a90863140ddecc3fcddd",
+          "name": "campaign",
+          "position": 12
+        },
+        {
+          "id": "243d5033deff02d0b5782942d826f9b6",
+          "name": "TimeBtwCampaigns",
+          "position": 13
+        },
+        {
+          "id": "383d4e0f261cc5b91a114500e7ff5b63",
+          "name": "NumOfCalls",
+          "position": 14
+        },
+        {
+          "id": "3887948a17037cbb45d3f07c844523cf",
+          "name": "CampaignSuccess",
+          "position": 15
+        },
+        {
+          "id": "4b85621e3e68734e8598919b5dfa44a6",
+          "name": "PurchasedProduct",
+          "position": 16
+        },
+        {
+          "id": "628095133e49a6b0f186ae3612a1a0ca",
+          "name": "Prediction",
+          "position": 17
+        }
+      ],
+      "identifier": "6c849c5e-70a9-4612-9481-ddce6e74becf",
+      "kept": true,
+      "name": "DecisionTreeSheet1",
+      "position": 1
+    }
+  ],
+  "properties": {
+    "cardinalities.generation": {
+      "encrypted": false,
+      "type": "java.lang.String",
+      "value": "false"
+    },
+    "histograms.generation": {
+      "encrypted": false,
+      "type": "java.lang.String",
+      "value": "false"
+    },
+    "minmaxmean.generation": {
+      "encrypted": false,
+      "type": "java.lang.String",
+      "value": "false"
+    }
+  }
+}
