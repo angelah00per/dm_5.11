@@ -1,0 +1,22 @@
+{
+  "createdAt": "2016-01-13T15:15:31.660-08:00",
+  "description": "",
+  "extension": "ifg",
+  "folder": [
+    "/Users/admin/Applications/Smart Analytics Tutorial/1 Column Dependencies",
+    "b03943de-11b2-4121-9c77-e4b9d7a6753f"
+  ],
+  "modifiedAt": "2016-01-13T15:15:31.657-08:00",
+  "name": "ColumnDependencyIFG",
+  "permission": {
+    "groups": {},
+    "owner": "admin",
+    "permissionForOthers": {
+      "executable": false,
+      "readable": false,
+      "writable": false
+    },
+    "publiclyShared": false
+  },
+  "uuid": "7202b811-8452-430a-a1bb-40d7311e2f11"
+}
