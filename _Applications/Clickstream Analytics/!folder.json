@@ -2,7 +2,7 @@
   "hidden": false,
   "name": "Clickstream Analytics",
   "parent": [
-    "/Applications",
+    "/_Applications",
     "41032702-06ed-45af-901e-b018950d8a88"
   ],
   "permission": {
