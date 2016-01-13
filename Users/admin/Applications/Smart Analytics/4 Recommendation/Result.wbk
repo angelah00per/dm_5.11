@@ -10,14 +10,14 @@
     "mode": "IGNORE"
   },
   "file": {
-    "createdAt": "2016-01-13T15:15:31.209-08:00",
+    "createdAt": "2016-01-13T15:15:31.000-08:00",
     "description": "",
     "extension": "wbk",
     "folder": [
-      "/Users/admin/Applications/Smart Analytics Tutorial/4 Recommendation",
+      "/Users/admin/Applications/Smart Analytics/4 Recommendation",
       "f86cba6f-7408-41ea-b318-25b60ac512ae"
     ],
-    "modifiedAt": "2016-01-13T15:15:31.231-08:00",
+    "modifiedAt": "2016-01-13T15:15:31.000-08:00",
     "name": "Result",
     "permission": {
       "groups": {},
