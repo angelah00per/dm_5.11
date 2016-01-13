@@ -1,0 +1,17 @@
+{
+  "hidden": false,
+  "name": "Copy_of_Clickstream Analytics",
+  "parent": [
+    "/Users/admin/Applications",
+    "10686601-9222-4fca-9f6e-f5d45da621f0"
+  ],
+  "permission": {
+    "groups": {},
+    "owner": "admin",
+    "permissionForOthers": {
+      "readable": false,
+      "writable": false
+    }
+  },
+  "uuid": "5ef4397c-b071-43be-a282-e537130802df"
+}
