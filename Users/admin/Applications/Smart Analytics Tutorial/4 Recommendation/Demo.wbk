@@ -1,0 +1,95 @@
+{
+  "_version": "5.11.2",
+  "dataPermission": {
+    "groups": {},
+    "owner": "admin",
+    "permissionForOthers": false
+  },
+  "errorHandling": {
+    "maxLogErrors": 1000,
+    "mode": "IGNORE"
+  },
+  "file": {
+    "createdAt": "2016-01-13T15:15:31.264-08:00",
+    "description": "",
+    "extension": "wbk",
+    "folder": [
+      "/Users/admin/Applications/Smart Analytics Tutorial/4 Recommendation",
+      "f86cba6f-7408-41ea-b318-25b60ac512ae"
+    ],
+    "modifiedAt": "2016-01-13T15:15:31.271-08:00",
+    "name": "Demo",
+    "permission": {
+      "groups": {},
+      "owner": "admin",
+      "permissionForOthers": {
+        "executable": false,
+        "readable": false,
+        "writable": false
+      },
+      "publiclyShared": false
+    },
+    "uuid": "a3472e7a-e567-4ce3-887b-4b7e7eb0a2ca"
+  },
+  "jobConfiguration": {
+    "dataRetentionPolicy": {
+      "_type": "PurgeAfter",
+      "minimumToKeep": 1
+    },
+    "hadoopProperties": {},
+    "logging": {
+      "properties": {}
+    },
+    "triggering": {
+      "_type": "ManualTriggering"
+    }
+  },
+  "notification": {
+    "emailsInCaseOfFailure": [],
+    "emailsInCaseOfSuccess": []
+  },
+  "sheets": [
+    {
+      "_type": "DataSourceReferenceSheet",
+      "uuid": "57466768-1453-4e56-9c8d-b096751dc8af",
+      "columns": [
+        {
+          "id": "ProductID",
+          "name": "ProductID",
+          "position": 0
+        },
+        {
+          "id": "UserID",
+          "name": "UserID",
+          "position": 1
+        },
+        {
+          "id": "Rating",
+          "name": "Rating",
+          "position": 2
+        }
+      ],
+      "identifier": "d5aa9052-c2c1-47e5-8e44-f5469840bbfb",
+      "kept": true,
+      "name": "Users_bought_Product",
+      "position": 0
+    }
+  ],
+  "properties": {
+    "cardinalities.generation": {
+      "encrypted": false,
+      "type": "java.lang.String",
+      "value": "false"
+    },
+    "histograms.generation": {
+      "encrypted": false,
+      "type": "java.lang.String",
+      "value": "false"
+    },
+    "minmaxmean.generation": {
+      "encrypted": false,
+      "type": "java.lang.String",
+      "value": "false"
+    }
+  }
+}
