@@ -1,0 +1,354 @@
+{
+  "_version": "5.11.2",
+  "dataPermission": {
+    "groups": {},
+    "owner": "admin",
+    "permissionForOthers": false
+  },
+  "errorHandling": {
+    "maxLogErrors": 1000,
+    "mode": "IGNORE"
+  },
+  "file": {
+    "createdAt": "2016-01-13T15:15:31.209-08:00",
+    "description": "",
+    "extension": "wbk",
+    "folder": [
+      "/Users/admin/Applications/Smart Analytics Tutorial/4 Recommendation",
+      "f86cba6f-7408-41ea-b318-25b60ac512ae"
+    ],
+    "modifiedAt": "2016-01-13T15:15:31.231-08:00",
+    "name": "Result",
+    "permission": {
+      "groups": {},
+      "owner": "admin",
+      "permissionForOthers": {
+        "executable": false,
+        "readable": false,
+        "writable": false
+      },
+      "publiclyShared": false
+    },
+    "uuid": "5862030a-2adb-4846-a1e5-49292677f685"
+  },
+  "jobConfiguration": {
+    "dataRetentionPolicy": {
+      "_type": "PurgeAfter",
+      "minimumToKeep": 1
+    },
+    "hadoopProperties": {},
+    "logging": {
+      "properties": {}
+    },
+    "triggering": {
+      "_type": "ManualTriggering"
+    }
+  },
+  "notification": {
+    "emailsInCaseOfFailure": [],
+    "emailsInCaseOfSuccess": []
+  },
+  "sheets": [
+    {
+      "_type": "DataSourceReferenceSheet",
+      "uuid": "57466768-1453-4e56-9c8d-b096751dc8af",
+      "columns": [
+        {
+          "id": "ProductID",
+          "name": "ProductID",
+          "position": 0
+        },
+        {
+          "id": "UserID",
+          "name": "UserID",
+          "position": 1
+        },
+        {
+          "id": "Rating",
+          "name": "Rating",
+          "position": 2
+        }
+      ],
+      "identifier": "55429408-3fd0-4477-a1db-f696f5af0f22",
+      "kept": true,
+      "name": "Users_bought_Product",
+      "position": 0
+    },
+    {
+      "_type": "DataMiningRecommendationSheet",
+      "filterTrainingData": true,
+      "itemIdColumn": [
+        "ProductID",
+        "ProductID",
+        0,
+        {
+          "type": "INTEGER"
+        }
+      ],
+      "lambda": 0.06499999761581421,
+      "numberOfDensityStripBins": 256,
+      "numberOfHiddenFeatures": 7,
+      "numberOfIterations": 7,
+      "numberOfTopRecommendations": 1,
+      "ratingColumn": [
+        "Rating",
+        "Rating",
+        2,
+        {
+          "type": "FLOAT"
+        }
+      ],
+      "userIdColumn": [
+        "UserID",
+        "UserID",
+        1,
+        {
+          "type": "INTEGER"
+        }
+      ],
+      "includedColumns": [
+        [
+          "UserID",
+          "UserID",
+          1,
+          {
+            "type": "INTEGER"
+          }
+        ],
+        [
+          "ProductID",
+          "ProductID",
+          0,
+          {
+            "type": "INTEGER"
+          }
+        ],
+        [
+          "Rating",
+          "Rating",
+          2,
+          {
+            "type": "FLOAT"
+          }
+        ]
+      ],
+      "source": "Users_bought_Product",
+      "columns": [
+        {
+          "id": "3707f95ca3779647d9cb1828f4d16611",
+          "name": "UserId",
+          "position": 0
+        },
+        {
+          "id": "f68c463547b6ca27f6d91709ccdc6641",
+          "name": "TopItem1",
+          "position": 1
+        },
+        {
+          "id": "27ce1dba20d848646f13944360cad044",
+          "name": "RatingScore1",
+          "position": 2
+        }
+      ],
+      "identifier": "5fb5a853-d45f-4706-add0-559fd5af7273",
+      "kept": true,
+      "name": "recommendationSheet1",
+      "position": 1
+    },
+    {
+      "_type": "DataSourceReferenceSheet",
+      "uuid": "334b1fc4-092e-4d61-926c-213237f243b5",
+      "columns": [
+        {
+          "id": "ProductID",
+          "name": "ProductID",
+          "position": 0
+        },
+        {
+          "id": "AppName",
+          "name": "AppName",
+          "position": 1
+        }
+      ],
+      "identifier": "2e47eb1e-0d70-4ac7-a495-d0160ba918d3",
+      "kept": false,
+      "name": "All_Products",
+      "position": 2
+    },
+    {
+      "_type": "DataSourceReferenceSheet",
+      "uuid": "b833512a-44a6-49ab-b3ce-5f3006571079",
+      "columns": [
+        {
+          "id": "UserID",
+          "name": "UserID",
+          "position": 0
+        },
+        {
+          "id": "FirstName",
+          "name": "FirstName",
+          "position": 1
+        },
+        {
+          "id": "LastName",
+          "name": "LastName",
+          "position": 2
+        }
+      ],
+      "identifier": "c7cc0b96-6edf-46be-9a4a-4c7799920cd2",
+      "kept": false,
+      "name": "All_Users",
+      "position": 3
+    },
+    {
+      "_type": "MultiJoinSheet",
+      "definitions": [
+        {
+          "left": {
+            "includedColumns": [
+              "UserId",
+              "TopItem1",
+              "RatingScore1"
+            ],
+            "joinColumns": [
+              "UserId"
+            ],
+            "sheetName": "recommendationSheet1"
+          },
+          "right": {
+            "includedColumns": [
+              "FirstName",
+              "LastName"
+            ],
+            "joinColumns": [
+              "UserID"
+            ],
+            "sheetName": "All_Users"
+          },
+          "type": "INNER"
+        },
+        {
+          "left": {
+            "includedColumns": [
+              "UserId",
+              "TopItem1",
+              "RatingScore1"
+            ],
+            "joinColumns": [
+              "TopItem1"
+            ],
+            "sheetName": "recommendationSheet1"
+          },
+          "right": {
+            "includedColumns": [
+              "AppName"
+            ],
+            "joinColumns": [
+              "ProductID"
+            ],
+            "sheetName": "All_Products"
+          },
+          "type": "INNER"
+        }
+      ],
+      "columns": [
+        {
+          "id": "79958b1a3fd0c66e17beed168c39ab75",
+          "name": "recommendationSheet1.UserId",
+          "position": 0
+        },
+        {
+          "id": "f756dfe26484cd6fea14ab8869e18b31",
+          "name": "recommendationSheet1.TopItem1",
+          "position": 1
+        },
+        {
+          "id": "3a181f24d5883f0c1d95ccb5a8e4c0e6",
+          "name": "recommendationSheet1.RatingScore1",
+          "position": 2
+        },
+        {
+          "id": "5c487362122c8f76d326dc124d753f1a",
+          "name": "All_Users.FirstName",
+          "position": 3
+        },
+        {
+          "id": "28de4a65710e416f998e2c49c5847a92",
+          "name": "All_Users.LastName",
+          "position": 4
+        },
+        {
+          "id": "10b8e0f5f961a764bdf74b55aaa03716",
+          "name": "All_Products.AppName",
+          "position": 5
+        }
+      ],
+      "identifier": "b1e58aa2-4573-4470-8680-29dddd6308c8",
+      "kept": true,
+      "name": "Joined",
+      "position": 4
+    },
+    {
+      "_type": "FormulaSheet",
+      "columns": [
+        {
+          "formula": "\u003d#Joined!recommendationSheet1.UserId",
+          "id": "0",
+          "name": "UserId",
+          "position": 0
+        },
+        {
+          "formula": "\u003d#Joined!recommendationSheet1.TopItem1",
+          "id": "1",
+          "name": "TopItem1",
+          "position": 1
+        },
+        {
+          "formula": "\u003d#Joined!All_Products.AppName",
+          "id": "5",
+          "name": "AppName",
+          "position": 2
+        },
+        {
+          "formula": "\u003d#Joined!recommendationSheet1.RatingScore1",
+          "id": "2",
+          "name": "RatingScore1",
+          "position": 3
+        },
+        {
+          "formula": "\u003d#Joined!All_Users.FirstName",
+          "id": "3",
+          "name": "FirstName",
+          "position": 4
+        },
+        {
+          "formula": "\u003d#Joined!All_Users.LastName",
+          "id": "4",
+          "name": "LastName",
+          "position": 5
+        }
+      ],
+      "identifier": "82e48523-902c-49d2-a3a8-188ca7635e5d",
+      "kept": true,
+      "name": "Result",
+      "position": 5
+    }
+  ],
+  "properties": {
+    "cardinalities.generation": {
+      "encrypted": false,
+      "type": "java.lang.String",
+      "value": "false"
+    },
+    "histograms.generation": {
+      "encrypted": false,
+      "type": "java.lang.String",
+      "value": "false"
+    },
+    "minmaxmean.generation": {
+      "encrypted": false,
+      "type": "java.lang.String",
+      "value": "false"
+    }
+  }
+}
