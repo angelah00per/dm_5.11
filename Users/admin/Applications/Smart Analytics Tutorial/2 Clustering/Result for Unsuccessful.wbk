@@ -1,0 +1,433 @@
+{
+  "_version": "5.11.2",
+  "dataPermission": {
+    "groups": {},
+    "owner": "admin",
+    "permissionForOthers": false
+  },
+  "errorHandling": {
+    "maxLogErrors": 1000,
+    "mode": "IGNORE"
+  },
+  "file": {
+    "createdAt": "2016-01-13T15:15:31.035-08:00",
+    "description": "",
+    "extension": "wbk",
+    "folder": [
+      "/Users/admin/Applications/Smart Analytics Tutorial/2 Clustering",
+      "d755057b-25f4-438b-9f40-dc48293e1290"
+    ],
+    "modifiedAt": "2016-01-13T15:15:31.046-08:00",
+    "name": "Result for Unsuccessful",
+    "permission": {
+      "groups": {},
+      "owner": "admin",
+      "permissionForOthers": {
+        "executable": false,
+        "readable": false,
+        "writable": false
+      },
+      "publiclyShared": false
+    },
+    "uuid": "dfd5e230-0652-43ed-8d04-e1d52e8b6794"
+  },
+  "jobConfiguration": {
+    "dataRetentionPolicy": {
+      "_type": "PurgeAfter",
+      "minimumToKeep": 1
+    },
+    "hadoopProperties": {},
+    "logging": {
+      "properties": {}
+    },
+    "triggering": {
+      "_type": "ManualTriggering"
+    }
+  },
+  "notification": {
+    "emailsInCaseOfFailure": [],
+    "emailsInCaseOfSuccess": []
+  },
+  "sheets": [
+    {
+      "_type": "DataSourceReferenceSheet",
+      "uuid": "1a221cc8-7421-4229-92e7-d096964c72d8",
+      "columns": [
+        {
+          "id": "age",
+          "name": "age",
+          "position": 0
+        },
+        {
+          "id": "job",
+          "name": "job",
+          "position": 1
+        },
+        {
+          "id": "marital",
+          "name": "marital",
+          "position": 2
+        },
+        {
+          "id": "education",
+          "name": "education",
+          "position": 3
+        },
+        {
+          "id": "default",
+          "name": "default",
+          "position": 4
+        },
+        {
+          "id": "balance",
+          "name": "balance",
+          "position": 5
+        },
+        {
+          "id": "housing",
+          "name": "housing",
+          "position": 6
+        },
+        {
+          "id": "loan",
+          "name": "loan",
+          "position": 7
+        },
+        {
+          "id": "contact",
+          "name": "contact",
+          "position": 8
+        },
+        {
+          "id": "day",
+          "name": "day",
+          "position": 9
+        },
+        {
+          "id": "month",
+          "name": "month",
+          "position": 10
+        },
+        {
+          "id": "duration",
+          "name": "duration",
+          "position": 11
+        },
+        {
+          "id": "campaign",
+          "name": "campaign",
+          "position": 12
+        },
+        {
+          "id": "TimeBtwCampaigns",
+          "name": "TimeBtwCampaigns",
+          "position": 13
+        },
+        {
+          "id": "NumOfCalls",
+          "name": "NumOfCalls",
+          "position": 14
+        },
+        {
+          "id": "CampaignSuccess",
+          "name": "CampaignSuccess",
+          "position": 15
+        },
+        {
+          "id": "PurchasedProduct",
+          "name": "PurchasedProduct",
+          "position": 16
+        }
+      ],
+      "identifier": "aadba69c-1448-4599-af2c-136748e31e78",
+      "kept": true,
+      "name": "Bank_data",
+      "position": 0
+    },
+    {
+      "_type": "DataMiningKMeansSheet",
+      "normalizeNumericalColumns": true,
+      "numberOfClusters": 2,
+      "numberOfIndicatorValues": 10,
+      "numberOfIterations": 7,
+      "includedColumns": [
+        [
+          "TimeBtwCampaigns",
+          "TimeBtwCampaigns",
+          13,
+          {
+            "type": "INTEGER"
+          }
+        ],
+        [
+          "NumOfCalls",
+          "NumOfCalls",
+          14,
+          {
+            "type": "INTEGER"
+          }
+        ],
+        [
+          "CampaignSuccess",
+          "CampaignSuccess",
+          15,
+          {
+            "type": "STRING"
+          }
+        ]
+      ],
+      "source": "Bank_data",
+      "columns": [
+        {
+          "id": "45936f83eca0b43a9261145b1775ca50",
+          "name": "age",
+          "position": 0
+        },
+        {
+          "id": "686c0922bbd8f706b1b2fd049a725e73",
+          "name": "job",
+          "position": 1
+        },
+        {
+          "id": "ab1b6c4b80cded8f06cfb96006cce39b",
+          "name": "marital",
+          "position": 2
+        },
+        {
+          "id": "511782c328c8a87db5b845f3be98fc32",
+          "name": "education",
+          "position": 3
+        },
+        {
+          "id": "320c5e8f9eb9d8024f8f0855e662575e",
+          "name": "default",
+          "position": 4
+        },
+        {
+          "id": "4ad994954156f36c751cf827f8003bc6",
+          "name": "balance",
+          "position": 5
+        },
+        {
+          "id": "3ceff7f8d55925cf7b92419daa0adec3",
+          "name": "housing",
+          "position": 6
+        },
+        {
+          "id": "170ca9ab440969c1a97dd59c6f8a9434",
+          "name": "loan",
+          "position": 7
+        },
+        {
+          "id": "82af7c30c90413fd7abdc3141fc14ce8",
+          "name": "contact",
+          "position": 8
+        },
+        {
+          "id": "13f2e622bfe1da81a7d8f15c26517ae9",
+          "name": "day",
+          "position": 9
+        },
+        {
+          "id": "b4573bb62d3552596a91cc65c1b862bf",
+          "name": "month",
+          "position": 10
+        },
+        {
+          "id": "716ac897cf662c2ce42ae94bca5c3ac9",
+          "name": "duration",
+          "position": 11
+        },
+        {
+          "id": "8b500512f0d176fa326b55ffa9a9c0e2",
+          "name": "campaign",
+          "position": 12
+        },
+        {
+          "id": "6a344aa55ae307a94ed459a407749e56",
+          "name": "TimeBtwCampaigns",
+          "position": 13
+        },
+        {
+          "id": "8894897ab55ec3b0ad514d1b959fa279",
+          "name": "NumOfCalls",
+          "position": 14
+        },
+        {
+          "id": "7d6c4b522af69b69c43b31cc46b27362",
+          "name": "CampaignSuccess",
+          "position": 15
+        },
+        {
+          "id": "67f9d7da8491be5ba65d1904fc0069f9",
+          "name": "PurchasedProduct",
+          "position": 16
+        },
+        {
+          "id": "98868f3a21d41972bbc4fe1fa9d3155a",
+          "name": "ClusterID",
+          "position": 17
+        }
+      ],
+      "identifier": "95818192-7b9f-47fb-9f53-8aa61eae684b",
+      "kept": true,
+      "name": "ClusteringSheet1",
+      "position": 1
+    },
+    {
+      "_type": "FormulaSheet",
+      "columns": [
+        {
+          "formula": "\u003dGROUPBY(#ClusteringSheet1!ClusterID)",
+          "id": "1",
+          "name": "ClusterID",
+          "position": 0
+        },
+        {
+          "formula": "\u003dGROUPBY(#ClusteringSheet1!PurchasedProduct)",
+          "id": "2",
+          "name": "PurchasedProduct",
+          "position": 1
+        },
+        {
+          "formula": "\u003dGROUPCOUNT()",
+          "id": "3",
+          "name": "Count",
+          "position": 2
+        }
+      ],
+      "identifier": "110aee9f-d35d-42c0-b1c3-8ff022f547b9",
+      "kept": true,
+      "name": "Purchased",
+      "position": 2
+    },
+    {
+      "_type": "FormulaSheet",
+      "columns": [
+        {
+          "formula": "\u003dGROUPBY(#ClusteringSheet1!ClusterID)",
+          "id": "0",
+          "name": "ClusterID",
+          "position": 0
+        },
+        {
+          "formula": "\u003dGROUPAVERAGE(#ClusteringSheet1!TimeBtwCampaigns)",
+          "id": "1",
+          "name": "Average_TimeBtwCampaigns",
+          "position": 1
+        },
+        {
+          "formula": "\u003dGROUPAVERAGE(#ClusteringSheet1!NumOfCalls)",
+          "id": "2",
+          "name": "Average_NumOfCalls",
+          "position": 2
+        }
+      ],
+      "identifier": "40f62944-7938-431a-99bf-f9bc319382dd",
+      "kept": true,
+      "name": "Average",
+      "position": 3
+    },
+    {
+      "_type": "FormulaSheet",
+      "columns": [
+        {
+          "formula": "\u003dGROUPBY(#ClusteringSheet1!marital)",
+          "id": "0",
+          "name": "marital",
+          "position": 0
+        },
+        {
+          "formula": "\u003dGROUPCOUNT()",
+          "id": "1",
+          "name": "Count",
+          "position": 1
+        }
+      ],
+      "identifier": "f656d50b-b7ce-4def-bbce-bc6ea6a0a3ae",
+      "kept": true,
+      "name": "Marital",
+      "position": 4
+    },
+    {
+      "_type": "FormulaSheet",
+      "columns": [
+        {
+          "formula": "\u003dGROUPBY(#ClusteringSheet1!housing)",
+          "id": "0",
+          "name": "housing",
+          "position": 0
+        },
+        {
+          "formula": "\u003dgroupcount()",
+          "id": "1",
+          "name": "housingCount",
+          "position": 1
+        }
+      ],
+      "identifier": "3c80e1cf-f7b6-4bf4-a4d0-b3335c4cdec5",
+      "kept": true,
+      "name": "Housing",
+      "position": 5
+    },
+    {
+      "_type": "FormulaSheet",
+      "columns": [
+        {
+          "formula": "\u003dGROUPBY(#ClusteringSheet1!loan)",
+          "id": "0",
+          "name": "loan",
+          "position": 0
+        },
+        {
+          "formula": "\u003dGROUPCOUNT()",
+          "id": "1",
+          "name": "Count",
+          "position": 1
+        }
+      ],
+      "identifier": "8c9d6b97-5ab6-4f9a-adaa-d0a3e8a885aa",
+      "kept": true,
+      "name": "Loan",
+      "position": 6
+    },
+    {
+      "_type": "FormulaSheet",
+      "columns": [
+        {
+          "formula": "\u003dGROUPBY(#Bank_data!default)",
+          "id": "0",
+          "name": "default",
+          "position": 0
+        },
+        {
+          "formula": "\u003dGROUPCOUNT()",
+          "id": "1",
+          "name": "Count",
+          "position": 1
+        }
+      ],
+      "identifier": "aebe265f-e28b-4584-9896-84c8d9603ebe",
+      "kept": true,
+      "name": "Default",
+      "position": 7
+    }
+  ],
+  "properties": {
+    "cardinalities.generation": {
+      "encrypted": false,
+      "type": "java.lang.String",
+      "value": "false"
+    },
+    "histograms.generation": {
+      "encrypted": false,
+      "type": "java.lang.String",
+      "value": "false"
+    },
+    "minmaxmean.generation": {
+      "encrypted": false,
+      "type": "java.lang.String",
+      "value": "false"
+    }
+  }
+}
