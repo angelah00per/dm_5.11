@@ -1,0 +1,17 @@
+{
+  "hidden": true,
+  "name": ".system",
+  "parent": [
+    "/",
+    "668df931-37ce-42a8-9604-cd89a9e627d2"
+  ],
+  "permission": {
+    "groups": {},
+    "owner": "admin",
+    "permissionForOthers": {
+      "readable": true,
+      "writable": true
+    }
+  },
+  "uuid": "505eead2-4131-4290-89b7-0181d88ad500"
+}
