@@ -24,7 +24,7 @@
     "owner": "admin",
     "permissionForOthers": {
       "executable": true,
-      "readable": true,
+      "readable": false,
       "writable": false
     },
     "publiclyShared": false
