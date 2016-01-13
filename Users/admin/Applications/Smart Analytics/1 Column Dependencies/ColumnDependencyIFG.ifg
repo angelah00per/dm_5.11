@@ -1,12 +1,12 @@
 {
-  "createdAt": "2016-01-13T15:15:31.660-08:00",
+  "createdAt": "2016-01-13T15:15:32.000-08:00",
   "description": "",
   "extension": "ifg",
   "folder": [
-    "/Users/admin/Applications/Smart Analytics Tutorial/1 Column Dependencies",
+    "/Users/admin/Applications/Smart Analytics/1 Column Dependencies",
     "b03943de-11b2-4121-9c77-e4b9d7a6753f"
   ],
-  "modifiedAt": "2016-01-13T15:15:31.657-08:00",
+  "modifiedAt": "2016-01-13T15:15:32.000-08:00",
   "name": "ColumnDependencyIFG",
   "permission": {
     "groups": {},
