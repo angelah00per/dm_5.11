@@ -1,0 +1,22 @@
+{
+  "createdAt": "2016-01-13T15:15:33.231-08:00",
+  "description": "",
+  "extension": "ifg",
+  "folder": [
+    "/Users/admin/Applications/Smart Analytics Tutorial/2 Clustering",
+    "d755057b-25f4-438b-9f40-dc48293e1290"
+  ],
+  "modifiedAt": "2016-01-13T15:15:33.228-08:00",
+  "name": "IFG for Unsuccessful Contacts",
+  "permission": {
+    "groups": {},
+    "owner": "admin",
+    "permissionForOthers": {
+      "executable": false,
+      "readable": false,
+      "writable": false
+    },
+    "publiclyShared": false
+  },
+  "uuid": "d2b43ade-43ba-4d13-8a7c-ed4224a1e2ad"
+}
