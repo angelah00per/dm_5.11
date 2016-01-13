@@ -16,7 +16,7 @@
         "writable": false
       },
       "IT Ops": {
-        "executable": false,
+        "executable": true,
         "readable": true,
         "writable": true
       }
