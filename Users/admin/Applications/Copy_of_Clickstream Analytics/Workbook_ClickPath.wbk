@@ -1,0 +1,354 @@
+{
+  "_version": "5.11.2",
+  "dataPermission": {
+    "groups": {},
+    "owner": "admin",
+    "permissionForOthers": false
+  },
+  "errorHandling": {
+    "maxLogErrors": 1000,
+    "mode": "IGNORE"
+  },
+  "file": {
+    "createdAt": "2016-01-12T19:52:08.420-08:00",
+    "description": "",
+    "extension": "wbk",
+    "folder": [
+      "/Users/admin/Applications/Copy_of_Clickstream Analytics",
+      "5ef4397c-b071-43be-a282-e537130802df"
+    ],
+    "modifiedAt": "2016-01-12T19:52:08.438-08:00",
+    "name": "Workbook_ClickPath",
+    "permission": {
+      "groups": {},
+      "owner": "admin",
+      "permissionForOthers": {
+        "executable": false,
+        "readable": false,
+        "writable": false
+      },
+      "publiclyShared": false
+    },
+    "uuid": "c082f97f-0aad-4cca-8520-65bdccd89e3e"
+  },
+  "jobConfiguration": {
+    "dataRetentionPolicy": {
+      "_type": "PurgeAfter",
+      "minimumToKeep": 1
+    },
+    "hadoopProperties": {},
+    "logging": {
+      "properties": {}
+    },
+    "triggering": {
+      "_type": "ManualTriggering"
+    }
+  },
+  "notification": {
+    "emailsInCaseOfFailure": [],
+    "emailsInCaseOfSuccess": []
+  },
+  "sheets": [
+    {
+      "_type": "DataSourceReferenceSheet",
+      "uuid": "ce0bfb34-1f96-46f4-8029-f140b5815aca",
+      "filter": {
+        "_type": "ColumnBasedSheetFilter",
+        "filterArguments": [
+          {
+            "_type": "NonValueSheetFilterArgument",
+            "column": "remoteUser",
+            "expression": "NOT_EMPTY"
+          },
+          {
+            "_type": "ConstantSheetFilterArgument",
+            "constantValue": "300",
+            "column": "status",
+            "expression": "LESS"
+          },
+          {
+            "_type": "ConstantSheetFilterArgument",
+            "constantValue": "admin",
+            "column": "remoteUser",
+            "expression": "TEXT_NOT_EQUALS"
+          }
+        ],
+        "operator": "AND"
+      },
+      "columns": [
+        {
+          "id": "remoteHost",
+          "name": "remoteHost",
+          "position": 0
+        },
+        {
+          "id": "remoteUser",
+          "name": "remoteUser",
+          "position": 1
+        },
+        {
+          "id": "timeEnglishFormat",
+          "name": "timeEnglishFormat",
+          "position": 2
+        },
+        {
+          "id": "request",
+          "name": "request",
+          "position": 3
+        },
+        {
+          "id": "status",
+          "name": "status",
+          "position": 4
+        },
+        {
+          "id": "bytesSent",
+          "name": "bytesSent",
+          "position": 5
+        }
+      ],
+      "identifier": "8fb13554-d32a-486c-b745-3eea4bf74435",
+      "kept": false,
+      "name": "Clickstream_Data",
+      "position": 0,
+      "selectedPartition": {
+        "formula": "$partition \u003e\u003d ASDATE(\"14-09-2010 22:00:00.000\"; \"dd-MM-yyyy HH:mm:ss.SSS\") \u0026\u0026 $partition \u003c\u003d ASDATE(\"15-09-2010 23:00:00.000\"; \"dd-MM-yyyy HH:mm:ss.SSS\")"
+      }
+    },
+    {
+      "_type": "FormulaSheet",
+      "columns": [
+        {
+          "formula": "\u003d#Clickstream_Data!remoteHost",
+          "id": "0",
+          "name": "remoteHost",
+          "position": 0
+        },
+        {
+          "formula": "\u003d#Clickstream_Data!remoteUser",
+          "id": "1",
+          "name": "remoteUser",
+          "position": 1
+        },
+        {
+          "formula": "\u003d#Clickstream_Data!timeEnglishFormat",
+          "id": "2",
+          "name": "timeEnglishFormat",
+          "position": 2
+        },
+        {
+          "formula": "\u003d#Clickstream_Data!request",
+          "id": "3",
+          "name": "request",
+          "position": 3
+        },
+        {
+          "formula": "\u003d#Clickstream_Data!status",
+          "id": "4",
+          "name": "status",
+          "position": 4
+        },
+        {
+          "formula": "\u003d#Clickstream_Data!bytesSent/1024",
+          "id": "5",
+          "name": "Kbytes",
+          "position": 5
+        },
+        {
+          "formula": "\u003dURL_FILE(#request)",
+          "id": "6",
+          "name": "pages",
+          "position": 6
+        }
+      ],
+      "identifier": "5f2e9c15-b919-4e88-9c85-ed838b0f4bb7",
+      "kept": true,
+      "name": "Workingset",
+      "position": 1
+    },
+    {
+      "_type": "DataSourceReferenceSheet",
+      "uuid": "0f76909c-9515-4abe-9f22-74446d1fe107",
+      "columns": [
+        {
+          "id": "ID",
+          "name": "ID",
+          "position": 0
+        },
+        {
+          "id": "User",
+          "name": "User",
+          "position": 1
+        },
+        {
+          "id": "Email",
+          "name": "Email",
+          "position": 2
+        },
+        {
+          "id": "Role",
+          "name": "Role",
+          "position": 3
+        },
+        {
+          "id": "Activated",
+          "name": "Activated",
+          "position": 4
+        }
+      ],
+      "identifier": "6b9be812-de2f-4c22-9eca-a0131fe8c3ed",
+      "kept": false,
+      "name": "Customer_Profile",
+      "position": 2
+    },
+    {
+      "_type": "SingleJoinSheet",
+      "definition": {
+        "left": {
+          "includedColumns": [
+            "remoteHost",
+            "remoteUser",
+            "timeEnglishFormat",
+            "request",
+            "status",
+            "Kbytes",
+            "pages"
+          ],
+          "joinColumns": [
+            "remoteUser"
+          ],
+          "sheetName": "Workingset"
+        },
+        "right": {
+          "includedColumns": [
+            "Email",
+            "Role"
+          ],
+          "joinColumns": [
+            "User"
+          ],
+          "sheetName": "Customer_Profile"
+        },
+        "type": "INNER"
+      },
+      "columns": [
+        {
+          "id": "f2dda6e0b677c4730d360205b66a07ee",
+          "name": "Workingset.remoteUser",
+          "position": 0
+        },
+        {
+          "id": "5e0a78780feff0d38d1bddc3eb367a48",
+          "name": "Workingset.remoteHost",
+          "position": 1
+        },
+        {
+          "id": "717894138e537cdebb09c2be911efa5f",
+          "name": "Workingset.timeEnglishFormat",
+          "position": 2
+        },
+        {
+          "id": "849fa5b77b12d2e858023e2a8cb715dd",
+          "name": "Workingset.request",
+          "position": 3
+        },
+        {
+          "id": "4b02133c199067ace6b0a02045d66c2a",
+          "name": "Workingset.status",
+          "position": 4
+        },
+        {
+          "id": "dbeae22dfb88dc88dc2032745e8bbff3",
+          "name": "Workingset.Kbytes",
+          "position": 5
+        },
+        {
+          "id": "2a195c085cfb783ba8987258d37f6852",
+          "name": "Workingset.pages",
+          "position": 6
+        },
+        {
+          "id": "23b54b79c4e6dc54d8ed538121005042",
+          "name": "Customer_Profile.Email",
+          "position": 7
+        },
+        {
+          "id": "eb8337dd1adbd10c7c012845cb665e04",
+          "name": "Customer_Profile.Role",
+          "position": 8
+        }
+      ],
+      "identifier": "54c3ec4d-625f-41af-b767-ffd4818a670c",
+      "kept": true,
+      "name": "Joined",
+      "position": 3
+    },
+    {
+      "_type": "FormulaSheet",
+      "columns": [
+        {
+          "formula": "\u003dGROUPBY(#Joined!Customer_Profile.Email)",
+          "id": "0",
+          "name": "Customer_Profile_Email",
+          "position": 0
+        },
+        {
+          "formula": "\u003dGROUPBYGAP(#Joined!Workingset.timeEnglishFormat;5m)",
+          "id": "1",
+          "name": "Start_TS",
+          "position": 1
+        },
+        {
+          "formula": "\u003dGROUP_PATH_CHANGES(#Joined!Workingset.pages)",
+          "id": "2",
+          "name": "Workingset_pages_Path",
+          "position": 2
+        }
+      ],
+      "identifier": "ee9b656f-cc25-4eaf-aa71-547ef715fae8",
+      "kept": true,
+      "name": "Session",
+      "position": 4
+    },
+    {
+      "_type": "FormulaSheet",
+      "columns": [
+        {
+          "formula": "\u003dGROUPBY(#Session!Workingset_pages_Path)",
+          "id": "0",
+          "name": "Workingset_pages_Path",
+          "position": 0
+        },
+        {
+          "formula": "\u003dGROUPCOUNT()",
+          "id": "1",
+          "name": "Count",
+          "position": 1
+        },
+        {
+          "formula": "\u003dJSON_ELEMENT(#Workingset_pages_Path;0)",
+          "id": "2",
+          "name": "From",
+          "position": 2
+        },
+        {
+          "formula": "\u003dJSON_ELEMENT(#Workingset_pages_Path;1)",
+          "id": "3",
+          "name": "To",
+          "position": 3
+        }
+      ],
+      "identifier": "d5a824e9-7032-45ac-8f61-1d392e76d5b8",
+      "kept": true,
+      "name": "ClickPaths",
+      "position": 5,
+      "sorting": {
+        "arguments": {
+          "Count": "DESCENDING"
+        },
+        "limit": 30
+      }
+    }
+  ],
+  "properties": {}
+}
