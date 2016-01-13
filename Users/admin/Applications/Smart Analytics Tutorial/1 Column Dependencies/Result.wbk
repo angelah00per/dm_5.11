@@ -1,0 +1,394 @@
+{
+  "_version": "5.11.2",
+  "dataPermission": {
+    "groups": {},
+    "owner": "admin",
+    "permissionForOthers": false
+  },
+  "errorHandling": {
+    "maxLogErrors": 1000,
+    "mode": "IGNORE"
+  },
+  "file": {
+    "createdAt": "2016-01-13T15:15:30.896-08:00",
+    "description": "",
+    "extension": "wbk",
+    "folder": [
+      "/Users/admin/Applications/Smart Analytics Tutorial/1 Column Dependencies",
+      "b03943de-11b2-4121-9c77-e4b9d7a6753f"
+    ],
+    "modifiedAt": "2016-01-13T15:15:30.907-08:00",
+    "name": "Result",
+    "permission": {
+      "groups": {},
+      "owner": "admin",
+      "permissionForOthers": {
+        "executable": false,
+        "readable": false,
+        "writable": false
+      },
+      "publiclyShared": false
+    },
+    "uuid": "a8d2155b-7f15-4a13-a069-ebf597075a53"
+  },
+  "jobConfiguration": {
+    "dataRetentionPolicy": {
+      "_type": "PurgeAfter",
+      "minimumToKeep": 1
+    },
+    "hadoopProperties": {},
+    "logging": {
+      "properties": {}
+    },
+    "triggering": {
+      "_type": "ManualTriggering"
+    }
+  },
+  "notification": {
+    "emailsInCaseOfFailure": [],
+    "emailsInCaseOfSuccess": []
+  },
+  "sheets": [
+    {
+      "_type": "DataSourceReferenceSheet",
+      "uuid": "1a221cc8-7421-4229-92e7-d096964c72d8",
+      "columns": [
+        {
+          "id": "age",
+          "name": "age",
+          "position": 0
+        },
+        {
+          "id": "job",
+          "name": "job",
+          "position": 1
+        },
+        {
+          "id": "marital",
+          "name": "marital",
+          "position": 2
+        },
+        {
+          "id": "education",
+          "name": "education",
+          "position": 3
+        },
+        {
+          "id": "default",
+          "name": "default",
+          "position": 4
+        },
+        {
+          "id": "balance",
+          "name": "balance",
+          "position": 5
+        },
+        {
+          "id": "housing",
+          "name": "housing",
+          "position": 6
+        },
+        {
+          "id": "loan",
+          "name": "loan",
+          "position": 7
+        },
+        {
+          "id": "contact",
+          "name": "contact",
+          "position": 8
+        },
+        {
+          "id": "day",
+          "name": "day",
+          "position": 9
+        },
+        {
+          "id": "month",
+          "name": "month",
+          "position": 10
+        },
+        {
+          "id": "duration",
+          "name": "duration",
+          "position": 11
+        },
+        {
+          "id": "campaign",
+          "name": "campaign",
+          "position": 12
+        },
+        {
+          "id": "TimeBtwCampaigns",
+          "name": "TimeBtwCampaigns",
+          "position": 13
+        },
+        {
+          "id": "NumOfCalls",
+          "name": "NumOfCalls",
+          "position": 14
+        },
+        {
+          "id": "CampaignSuccess",
+          "name": "CampaignSuccess",
+          "position": 15
+        },
+        {
+          "id": "PurchasedProduct",
+          "name": "PurchasedProduct",
+          "position": 16
+        }
+      ],
+      "identifier": "276fa2e9-60f2-4e14-a5a0-87144ee408b5",
+      "kept": false,
+      "name": "Bank_data",
+      "position": 0
+    },
+    {
+      "_type": "DataMiningColumnDependenciesSheet",
+      "maximumCardinality": 10000,
+      "includedColumns": [
+        [
+          "age",
+          "age",
+          0,
+          {
+            "type": "INTEGER"
+          }
+        ],
+        [
+          "job",
+          "job",
+          1,
+          {
+            "type": "STRING"
+          }
+        ],
+        [
+          "marital",
+          "marital",
+          2,
+          {
+            "type": "STRING"
+          }
+        ],
+        [
+          "education",
+          "education",
+          3,
+          {
+            "type": "STRING"
+          }
+        ],
+        [
+          "default",
+          "default",
+          4,
+          {
+            "type": "STRING"
+          }
+        ],
+        [
+          "balance",
+          "balance",
+          5,
+          {
+            "type": "INTEGER"
+          }
+        ],
+        [
+          "housing",
+          "housing",
+          6,
+          {
+            "type": "STRING"
+          }
+        ],
+        [
+          "loan",
+          "loan",
+          7,
+          {
+            "type": "STRING"
+          }
+        ],
+        [
+          "contact",
+          "contact",
+          8,
+          {
+            "type": "STRING"
+          }
+        ],
+        [
+          "day",
+          "day",
+          9,
+          {
+            "type": "INTEGER"
+          }
+        ],
+        [
+          "month",
+          "month",
+          10,
+          {
+            "type": "STRING"
+          }
+        ],
+        [
+          "duration",
+          "duration",
+          11,
+          {
+            "type": "INTEGER"
+          }
+        ],
+        [
+          "campaign",
+          "campaign",
+          12,
+          {
+            "type": "INTEGER"
+          }
+        ],
+        [
+          "TimeBtwCampaigns",
+          "TimeBtwCampaigns",
+          13,
+          {
+            "type": "INTEGER"
+          }
+        ],
+        [
+          "NumOfCalls",
+          "NumOfCalls",
+          14,
+          {
+            "type": "INTEGER"
+          }
+        ],
+        [
+          "CampaignSuccess",
+          "CampaignSuccess",
+          15,
+          {
+            "type": "STRING"
+          }
+        ],
+        [
+          "PurchasedProduct",
+          "PurchasedProduct",
+          16,
+          {
+            "type": "STRING"
+          }
+        ]
+      ],
+      "source": "Bank_data",
+      "columns": [
+        {
+          "id": "bac7c53b991e90c606e858d8bb7f19f1",
+          "name": "Column1",
+          "position": 0
+        },
+        {
+          "id": "9dac9a2c132e627d12b0121a585728fb",
+          "name": "Column2",
+          "position": 1
+        },
+        {
+          "id": "2a375627d38e0714ac18028bd4212028",
+          "name": "ColumnDependencyValue",
+          "position": 2
+        }
+      ],
+      "identifier": "2780f0f4-6814-4397-a73b-1adc40a797b2",
+      "kept": true,
+      "name": "columnDependenciesAll",
+      "position": 1,
+      "sorting": {
+        "arguments": {
+          "ColumnDependencyValue": "DESCENDING"
+        }
+      }
+    },
+    {
+      "_type": "FormulaSheet",
+      "filter": {
+        "_type": "ColumnBasedSheetFilter",
+        "filterArguments": [
+          {
+            "_type": "ConstantSheetFilterArgument",
+            "constantValue": "PurchasedProduct",
+            "column": "Column2",
+            "expression": "TEXT_EQUALS"
+          }
+        ],
+        "operator": "AND"
+      },
+      "columns": [
+        {
+          "formula": "\u003d#columnDependenciesAll!Column1",
+          "id": "0",
+          "name": "Column1",
+          "position": 0
+        },
+        {
+          "formula": "\u003d#columnDependenciesAll!Column2",
+          "id": "1",
+          "name": "Column2",
+          "position": 1
+        },
+        {
+          "formula": "\u003d#columnDependenciesAll!ColumnDependencyValue",
+          "id": "2",
+          "name": "ColumnDependencyValue",
+          "position": 2
+        }
+      ],
+      "identifier": "f6f73ca5-019b-4362-b133-a5a994a09a70",
+      "kept": true,
+      "name": "columnDependencyPurchased",
+      "position": 2
+    },
+    {
+      "_type": "FormulaSheet",
+      "columns": [
+        {
+          "formula": "\u003d#columnDependenciesAll!ColumnDependencyValue",
+          "id": "0",
+          "name": "ColumnDependencyValue",
+          "position": 0
+        },
+        {
+          "formula": "\u003dCONCAT(#columnDependenciesAll!Column1;\"-\";#columnDependenciesAll!Column2)",
+          "id": "1",
+          "name": "ColumnPair",
+          "position": 1
+        }
+      ],
+      "identifier": "d4b06f3a-7f49-43fb-87b8-b37ffd31213a",
+      "kept": true,
+      "name": "ColumnDependencyIFG",
+      "position": 3
+    }
+  ],
+  "properties": {
+    "cardinalities.generation": {
+      "encrypted": false,
+      "type": "java.lang.String",
+      "value": "false"
+    },
+    "histograms.generation": {
+      "encrypted": false,
+      "type": "java.lang.String",
+      "value": "false"
+    },
+    "minmaxmean.generation": {
+      "encrypted": false,
+      "type": "java.lang.String",
+      "value": "false"
+    }
+  }
+}
