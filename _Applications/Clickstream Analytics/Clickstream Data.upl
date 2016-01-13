@@ -17,7 +17,7 @@
       },
       "IT Ops": {
         "executable": false,
-        "readable": false,
+        "readable": true,
         "writable": false
       }
     },
