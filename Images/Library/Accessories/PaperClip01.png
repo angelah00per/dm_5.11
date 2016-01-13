@@ -1,0 +1,22 @@
+{
+  "createdAt": "2016-01-12T18:35:14.000-08:00",
+  "description": "",
+  "extension": "png",
+  "folder": [
+    "/Images/Library/Accessories",
+    "df12b782-0df6-401c-b075-7f862c997915"
+  ],
+  "modifiedAt": "2016-01-12T18:35:14.000-08:00",
+  "name": "PaperClip01",
+  "permission": {
+    "groups": {},
+    "owner": "system",
+    "permissionForOthers": {
+      "executable": false,
+      "readable": true,
+      "writable": true
+    },
+    "publiclyShared": false
+  },
+  "uuid": "048dff70-0f09-4f25-9a8f-7d9e6f4bcdc6"
+}
