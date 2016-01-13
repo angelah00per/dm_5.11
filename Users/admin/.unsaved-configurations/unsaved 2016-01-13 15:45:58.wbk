@@ -17,7 +17,7 @@
       "/Users/admin/.unsaved-configurations",
       "e9953030-7854-497b-9fb7-2509f07afc26"
     ],
-    "modifiedAt": "2016-01-13T15:45:58.745-08:00",
+    "modifiedAt": "2016-01-13T15:45:58.763-08:00",
     "name": "unsaved 2016-01-13 15:45:58",
     "permission": {
       "groups": {},
@@ -48,6 +48,102 @@
     "emailsInCaseOfFailure": [],
     "emailsInCaseOfSuccess": []
   },
-  "sheets": [],
+  "sheets": [
+    {
+      "_type": "DataSourceReferenceSheet",
+      "uuid": "1a221cc8-7421-4229-92e7-d096964c72d8",
+      "columns": [
+        {
+          "id": "age",
+          "name": "age",
+          "position": 0
+        },
+        {
+          "id": "job",
+          "name": "job",
+          "position": 1
+        },
+        {
+          "id": "marital",
+          "name": "marital",
+          "position": 2
+        },
+        {
+          "id": "education",
+          "name": "education",
+          "position": 3
+        },
+        {
+          "id": "default",
+          "name": "default",
+          "position": 4
+        },
+        {
+          "id": "balance",
+          "name": "balance",
+          "position": 5
+        },
+        {
+          "id": "housing",
+          "name": "housing",
+          "position": 6
+        },
+        {
+          "id": "loan",
+          "name": "loan",
+          "position": 7
+        },
+        {
+          "id": "contact",
+          "name": "contact",
+          "position": 8
+        },
+        {
+          "id": "day",
+          "name": "day",
+          "position": 9
+        },
+        {
+          "id": "month",
+          "name": "month",
+          "position": 10
+        },
+        {
+          "id": "duration",
+          "name": "duration",
+          "position": 11
+        },
+        {
+          "id": "campaign",
+          "name": "campaign",
+          "position": 12
+        },
+        {
+          "id": "TimeBtwCampaigns",
+          "name": "TimeBtwCampaigns",
+          "position": 13
+        },
+        {
+          "id": "NumOfCalls",
+          "name": "NumOfCalls",
+          "position": 14
+        },
+        {
+          "id": "CampaignSuccess",
+          "name": "CampaignSuccess",
+          "position": 15
+        },
+        {
+          "id": "PurchasedProduct",
+          "name": "PurchasedProduct",
+          "position": 16
+        }
+      ],
+      "identifier": "2ccc5222-9c2b-47ab-8478-6123753a9d39",
+      "kept": false,
+      "name": "Bank_Data",
+      "position": 0
+    }
+  ],
   "properties": {}
 }
