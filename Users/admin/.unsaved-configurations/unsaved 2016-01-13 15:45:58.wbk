@@ -1,0 +1,53 @@
+{
+  "_version": "5.11.2",
+  "dataPermission": {
+    "groups": {},
+    "owner": "admin",
+    "permissionForOthers": false
+  },
+  "errorHandling": {
+    "maxLogErrors": 1000,
+    "mode": "IGNORE"
+  },
+  "file": {
+    "createdAt": "2016-01-13T15:45:58.745-08:00",
+    "description": "",
+    "extension": "wbk",
+    "folder": [
+      "/Users/admin/.unsaved-configurations",
+      "e9953030-7854-497b-9fb7-2509f07afc26"
+    ],
+    "modifiedAt": "2016-01-13T15:45:58.745-08:00",
+    "name": "unsaved 2016-01-13 15:45:58",
+    "permission": {
+      "groups": {},
+      "owner": "admin",
+      "permissionForOthers": {
+        "executable": false,
+        "readable": false,
+        "writable": false
+      },
+      "publiclyShared": false
+    },
+    "uuid": "d6dc06c3-bdb4-443a-98f0-5fa08e11e3d4"
+  },
+  "jobConfiguration": {
+    "dataRetentionPolicy": {
+      "_type": "PurgeAfter",
+      "minimumToKeep": 1
+    },
+    "hadoopProperties": {},
+    "logging": {
+      "properties": {}
+    },
+    "triggering": {
+      "_type": "ManualTriggering"
+    }
+  },
+  "notification": {
+    "emailsInCaseOfFailure": [],
+    "emailsInCaseOfSuccess": []
+  },
+  "sheets": [],
+  "properties": {}
+}
