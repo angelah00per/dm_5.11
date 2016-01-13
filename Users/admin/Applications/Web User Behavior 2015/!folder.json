@@ -1,0 +1,17 @@
+{
+  "hidden": false,
+  "name": "Web User Behavior 2015",
+  "parent": [
+    "/Users/admin/Applications",
+    "10686601-9222-4fca-9f6e-f5d45da621f0"
+  ],
+  "permission": {
+    "groups": {},
+    "owner": "admin",
+    "permissionForOthers": {
+      "readable": false,
+      "writable": false
+    }
+  },
+  "uuid": "6ad206b3-4639-4443-a30f-662e2e3e3779"
+}
