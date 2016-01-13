@@ -10,14 +10,14 @@
     "mode": "IGNORE"
   },
   "file": {
-    "createdAt": "2016-01-12T19:52:08.347-08:00",
+    "createdAt": "2016-01-12T19:52:08.000-08:00",
     "description": "",
     "extension": "wbk",
     "folder": [
-      "/Users/admin/Applications/Copy_of_Clickstream Analytics",
+      "/Analytics/Copy_of_Clickstream Analytics",
       "5ef4397c-b071-43be-a282-e537130802df"
     ],
-    "modifiedAt": "2016-01-12T19:52:08.362-08:00",
+    "modifiedAt": "2016-01-12T19:52:08.000-08:00",
     "name": "Clickstream Analysis",
     "permission": {
       "groups": {},
