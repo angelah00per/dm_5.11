@@ -1,7 +1,9 @@
 {
   "_version": "5.11.2",
   "dataPermission": {
-    "groups": {},
+    "groups": {
+      "Digital Marketing": true
+    },
     "owner": "admin",
     "permissionForOthers": false
   },
