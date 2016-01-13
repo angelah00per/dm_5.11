@@ -18,7 +18,7 @@
       "IT Ops": {
         "executable": true,
         "readable": true,
-        "writable": false
+        "writable": true
       }
     },
     "owner": "admin",
