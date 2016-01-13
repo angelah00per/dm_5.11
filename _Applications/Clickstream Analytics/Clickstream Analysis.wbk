@@ -25,7 +25,7 @@
       "permissionForOthers": {
         "executable": true,
         "readable": false,
-        "writable": true
+        "writable": false
       },
       "publiclyShared": false
     },
