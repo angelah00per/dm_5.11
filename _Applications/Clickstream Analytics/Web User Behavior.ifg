@@ -9,7 +9,13 @@
   "modifiedAt": "2016-01-12T19:52:09.000-08:00",
   "name": "Web User Behavior",
   "permission": {
-    "groups": {},
+    "groups": {
+      "Digital Marketing": {
+        "executable": false,
+        "readable": false,
+        "writable": false
+      }
+    },
     "owner": "admin",
     "permissionForOthers": {
       "executable": false,
