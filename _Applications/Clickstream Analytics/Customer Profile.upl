@@ -3,7 +3,7 @@
   "description": "Customer profile data, used by several examples, including the Basic Tutorial.  While provided as a CSV for demonstration purposes, typically this information would come from a database.",
   "extension": "upl",
   "folder": [
-    "/Applications/Clickstream Analytics",
+    "/_Applications/Clickstream Analytics",
     "5ef4397c-b071-43be-a282-e537130802df"
   ],
   "modifiedAt": "2016-01-12T19:52:08.000-08:00",
