@@ -1,0 +1,17 @@
+{
+  "hidden": false,
+  "name": "Accessories",
+  "parent": [
+    "/Images/Library",
+    "6cb7b449-6bdc-4ddd-a930-abaaac689f6d"
+  ],
+  "permission": {
+    "groups": {},
+    "owner": "admin",
+    "permissionForOthers": {
+      "readable": true,
+      "writable": true
+    }
+  },
+  "uuid": "df12b782-0df6-401c-b075-7f862c997915"
+}
