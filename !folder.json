@@ -1,0 +1,13 @@
+{
+  "hidden": false,
+  "name": "/",
+  "permission": {
+    "groups": {},
+    "owner": "admin",
+    "permissionForOthers": {
+      "readable": true,
+      "writable": true
+    }
+  },
+  "uuid": "668df931-37ce-42a8-9604-cd89a9e627d2"
+}
