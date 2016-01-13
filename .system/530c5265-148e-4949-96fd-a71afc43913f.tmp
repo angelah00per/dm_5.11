@@ -1,0 +1,22 @@
+{
+  "createdAt": "2016-01-12T19:13:31.000-08:00",
+  "description": "",
+  "extension": "tmp",
+  "folder": [
+    "/.system",
+    "505eead2-4131-4290-89b7-0181d88ad500"
+  ],
+  "modifiedAt": "2016-01-12T19:13:31.000-08:00",
+  "name": "530c5265-148e-4949-96fd-a71afc43913f",
+  "permission": {
+    "groups": {},
+    "owner": "admin",
+    "permissionForOthers": {
+      "executable": false,
+      "readable": false,
+      "writable": false
+    },
+    "publiclyShared": false
+  },
+  "uuid": "dbb129ec-e0c8-4ae8-a525-2080128c4574"
+}
