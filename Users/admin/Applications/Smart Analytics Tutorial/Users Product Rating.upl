@@ -1,0 +1,22 @@
+{
+  "createdAt": "2016-01-13T15:15:30.731-08:00",
+  "description": "",
+  "extension": "upl",
+  "folder": [
+    "/Users/admin/Applications/Smart Analytics Tutorial",
+    "8fd3caca-766c-42bd-bb08-f7255cb18e72"
+  ],
+  "modifiedAt": "2016-01-13T15:15:30.733-08:00",
+  "name": "Users Product Rating",
+  "permission": {
+    "groups": {},
+    "owner": "admin",
+    "permissionForOthers": {
+      "executable": false,
+      "readable": false,
+      "writable": false
+    },
+    "publiclyShared": false
+  },
+  "uuid": "57466768-1453-4e56-9c8d-b096751dc8af"
+}
