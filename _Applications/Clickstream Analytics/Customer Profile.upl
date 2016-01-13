@@ -12,7 +12,7 @@
     "groups": {
       "Digital Marketing": {
         "executable": false,
-        "readable": false,
+        "readable": true,
         "writable": false
       }
     },
