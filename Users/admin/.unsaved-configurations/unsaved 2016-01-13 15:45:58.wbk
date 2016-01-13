@@ -10,14 +10,14 @@
     "mode": "IGNORE"
   },
   "file": {
-    "createdAt": "2016-01-13T15:45:58.745-08:00",
+    "createdAt": "2016-01-13T15:45:59.000-08:00",
     "description": "",
     "extension": "wbk",
     "folder": [
       "/Users/admin/.unsaved-configurations",
       "e9953030-7854-497b-9fb7-2509f07afc26"
     ],
-    "modifiedAt": "2016-01-13T15:45:58.763-08:00",
+    "modifiedAt": "2016-01-13T15:48:45.000-08:00",
     "name": "unsaved 2016-01-13 15:45:58",
     "permission": {
       "groups": {},
@@ -143,6 +143,170 @@
       "kept": false,
       "name": "Bank_Data",
       "position": 0
+    },
+    {
+      "_type": "DataMiningColumnDependenciesSheet",
+      "maximumCardinality": 10000,
+      "includedColumns": [
+        [
+          "age",
+          "age",
+          0,
+          {
+            "type": "INTEGER"
+          }
+        ],
+        [
+          "job",
+          "job",
+          1,
+          {
+            "type": "STRING"
+          }
+        ],
+        [
+          "marital",
+          "marital",
+          2,
+          {
+            "type": "STRING"
+          }
+        ],
+        [
+          "education",
+          "education",
+          3,
+          {
+            "type": "STRING"
+          }
+        ],
+        [
+          "default",
+          "default",
+          4,
+          {
+            "type": "STRING"
+          }
+        ],
+        [
+          "balance",
+          "balance",
+          5,
+          {
+            "type": "INTEGER"
+          }
+        ],
+        [
+          "housing",
+          "housing",
+          6,
+          {
+            "type": "STRING"
+          }
+        ],
+        [
+          "loan",
+          "loan",
+          7,
+          {
+            "type": "STRING"
+          }
+        ],
+        [
+          "contact",
+          "contact",
+          8,
+          {
+            "type": "STRING"
+          }
+        ],
+        [
+          "day",
+          "day",
+          9,
+          {
+            "type": "INTEGER"
+          }
+        ],
+        [
+          "month",
+          "month",
+          10,
+          {
+            "type": "STRING"
+          }
+        ],
+        [
+          "duration",
+          "duration",
+          11,
+          {
+            "type": "INTEGER"
+          }
+        ],
+        [
+          "campaign",
+          "campaign",
+          12,
+          {
+            "type": "INTEGER"
+          }
+        ],
+        [
+          "TimeBtwCampaigns",
+          "TimeBtwCampaigns",
+          13,
+          {
+            "type": "INTEGER"
+          }
+        ],
+        [
+          "NumOfCalls",
+          "NumOfCalls",
+          14,
+          {
+            "type": "INTEGER"
+          }
+        ],
+        [
+          "CampaignSuccess",
+          "CampaignSuccess",
+          15,
+          {
+            "type": "STRING"
+          }
+        ],
+        [
+          "PurchasedProduct",
+          "PurchasedProduct",
+          16,
+          {
+            "type": "STRING"
+          }
+        ]
+      ],
+      "source": "Bank_Data",
+      "columns": [
+        {
+          "id": "5147a2eb2e3919a563d0463394bc64a6",
+          "name": "Column1",
+          "position": 0
+        },
+        {
+          "id": "85e2301da4f8a999ae44bbb5c85b4027",
+          "name": "Column2",
+          "position": 1
+        },
+        {
+          "id": "160ab9ca1998d342972e4ec20aa3186e",
+          "name": "ColumnDependencyValue",
+          "position": 2
+        }
+      ],
+      "identifier": "2b3d6f0e-5fa0-40ca-a843-3ffa19d481d1",
+      "kept": true,
+      "name": "columnDependenciesSheet1",
+      "position": 1
     }
   ],
   "properties": {}
