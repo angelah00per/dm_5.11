@@ -1,0 +1,22 @@
+{
+  "createdAt": "2016-01-12T19:13:30.000-08:00",
+  "description": "An infographic that visualizes web visitor session statistics and click paths.",
+  "extension": "ifg",
+  "folder": [
+    "/Users/admin/Applications/Web User Behavior 2015",
+    "6ad206b3-4639-4443-a30f-662e2e3e3779"
+  ],
+  "modifiedAt": "2016-01-12T19:13:30.000-08:00",
+  "name": "Web User Behavior",
+  "permission": {
+    "groups": {},
+    "owner": "admin",
+    "permissionForOthers": {
+      "executable": false,
+      "readable": false,
+      "writable": false
+    },
+    "publiclyShared": false
+  },
+  "uuid": "3f22c022-b5d2-4005-8e72-76a82bddfa6e"
+}
