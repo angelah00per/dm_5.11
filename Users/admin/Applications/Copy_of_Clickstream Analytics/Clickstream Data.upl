@@ -1,0 +1,22 @@
+{
+  "createdAt": "2016-01-12T19:52:08.256-08:00",
+  "description": "A web server log file, used by several examples, including the Basic Tutorial. This illustrates processing raw, machine-generated data.",
+  "extension": "upl",
+  "folder": [
+    "/Users/admin/Applications/Copy_of_Clickstream Analytics",
+    "5ef4397c-b071-43be-a282-e537130802df"
+  ],
+  "modifiedAt": "2016-01-12T19:52:08.257-08:00",
+  "name": "Clickstream Data",
+  "permission": {
+    "groups": {},
+    "owner": "admin",
+    "permissionForOthers": {
+      "executable": false,
+      "readable": false,
+      "writable": false
+    },
+    "publiclyShared": false
+  },
+  "uuid": "ce0bfb34-1f96-46f4-8029-f140b5815aca"
+}
