@@ -1,0 +1,17 @@
+{
+  "hidden": false,
+  "name": "retail_analyst",
+  "parent": [
+    "/Users",
+    "a6fb569b-21c3-47bf-8891-6b513af31162"
+  ],
+  "permission": {
+    "groups": {},
+    "owner": "retail_analyst",
+    "permissionForOthers": {
+      "readable": false,
+      "writable": false
+    }
+  },
+  "uuid": "c2c292a6-ed56-453c-99ee-576b34b32d0a"
+}
