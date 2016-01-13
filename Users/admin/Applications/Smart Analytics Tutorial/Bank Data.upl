@@ -1,0 +1,22 @@
+{
+  "createdAt": "2016-01-13T15:15:30.855-08:00",
+  "description": "",
+  "extension": "upl",
+  "folder": [
+    "/Users/admin/Applications/Smart Analytics Tutorial",
+    "8fd3caca-766c-42bd-bb08-f7255cb18e72"
+  ],
+  "modifiedAt": "2016-01-13T15:15:30.856-08:00",
+  "name": "Bank Data",
+  "permission": {
+    "groups": {},
+    "owner": "admin",
+    "permissionForOthers": {
+      "executable": false,
+      "readable": false,
+      "writable": false
+    },
+    "publiclyShared": false
+  },
+  "uuid": "1a221cc8-7421-4229-92e7-d096964c72d8"
+}
