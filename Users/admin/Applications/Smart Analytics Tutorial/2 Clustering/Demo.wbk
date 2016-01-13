@@ -1,0 +1,165 @@
+{
+  "_version": "5.11.2",
+  "dataPermission": {
+    "groups": {},
+    "owner": "admin",
+    "permissionForOthers": false
+  },
+  "errorHandling": {
+    "maxLogErrors": 1000,
+    "mode": "IGNORE"
+  },
+  "file": {
+    "createdAt": "2016-01-13T15:15:31.011-08:00",
+    "description": "",
+    "extension": "wbk",
+    "folder": [
+      "/Users/admin/Applications/Smart Analytics Tutorial/2 Clustering",
+      "d755057b-25f4-438b-9f40-dc48293e1290"
+    ],
+    "modifiedAt": "2016-01-13T15:15:31.018-08:00",
+    "name": "Demo",
+    "permission": {
+      "groups": {},
+      "owner": "admin",
+      "permissionForOthers": {
+        "executable": false,
+        "readable": false,
+        "writable": false
+      },
+      "publiclyShared": false
+    },
+    "uuid": "00948aea-c63a-41f0-9d76-8793612d4e06"
+  },
+  "jobConfiguration": {
+    "dataRetentionPolicy": {
+      "_type": "PurgeAfter",
+      "minimumToKeep": 1
+    },
+    "hadoopProperties": {},
+    "logging": {
+      "properties": {}
+    },
+    "triggering": {
+      "_type": "ManualTriggering"
+    }
+  },
+  "notification": {
+    "emailsInCaseOfFailure": [],
+    "emailsInCaseOfSuccess": []
+  },
+  "sheets": [
+    {
+      "_type": "DataSourceReferenceSheet",
+      "uuid": "1a221cc8-7421-4229-92e7-d096964c72d8",
+      "columns": [
+        {
+          "id": "age",
+          "name": "age",
+          "position": 0
+        },
+        {
+          "id": "job",
+          "name": "job",
+          "position": 1
+        },
+        {
+          "id": "marital",
+          "name": "marital",
+          "position": 2
+        },
+        {
+          "id": "education",
+          "name": "education",
+          "position": 3
+        },
+        {
+          "id": "default",
+          "name": "default",
+          "position": 4
+        },
+        {
+          "id": "balance",
+          "name": "balance",
+          "position": 5
+        },
+        {
+          "id": "housing",
+          "name": "housing",
+          "position": 6
+        },
+        {
+          "id": "loan",
+          "name": "loan",
+          "position": 7
+        },
+        {
+          "id": "contact",
+          "name": "contact",
+          "position": 8
+        },
+        {
+          "id": "day",
+          "name": "day",
+          "position": 9
+        },
+        {
+          "id": "month",
+          "name": "month",
+          "position": 10
+        },
+        {
+          "id": "duration",
+          "name": "duration",
+          "position": 11
+        },
+        {
+          "id": "campaign",
+          "name": "campaign",
+          "position": 12
+        },
+        {
+          "id": "TimeBtwCampaigns",
+          "name": "TimeBtwCampaigns",
+          "position": 13
+        },
+        {
+          "id": "NumOfCalls",
+          "name": "NumOfCalls",
+          "position": 14
+        },
+        {
+          "id": "CampaignSuccess",
+          "name": "CampaignSuccess",
+          "position": 15
+        },
+        {
+          "id": "PurchasedProduct",
+          "name": "PurchasedProduct",
+          "position": 16
+        }
+      ],
+      "identifier": "715828d6-d379-4e37-926d-e676e48ee7b1",
+      "kept": true,
+      "name": "Bank_data",
+      "position": 0
+    }
+  ],
+  "properties": {
+    "cardinalities.generation": {
+      "encrypted": false,
+      "type": "java.lang.String",
+      "value": "false"
+    },
+    "histograms.generation": {
+      "encrypted": false,
+      "type": "java.lang.String",
+      "value": "false"
+    },
+    "minmaxmean.generation": {
+      "encrypted": false,
+      "type": "java.lang.String",
+      "value": "false"
+    }
+  }
+}
