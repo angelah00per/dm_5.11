@@ -1,0 +1,22 @@
+{
+  "createdAt": "2016-01-13T15:15:30.824-08:00",
+  "description": "",
+  "extension": "upl",
+  "folder": [
+    "/Users/admin/Applications/Smart Analytics Tutorial",
+    "8fd3caca-766c-42bd-bb08-f7255cb18e72"
+  ],
+  "modifiedAt": "2016-01-13T15:15:30.825-08:00",
+  "name": "All Users",
+  "permission": {
+    "groups": {},
+    "owner": "admin",
+    "permissionForOthers": {
+      "executable": false,
+      "readable": false,
+      "writable": false
+    },
+    "publiclyShared": false
+  },
+  "uuid": "b833512a-44a6-49ab-b3ce-5f3006571079"
+}
