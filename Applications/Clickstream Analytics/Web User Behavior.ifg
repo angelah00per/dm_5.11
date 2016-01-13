@@ -3,7 +3,7 @@
   "description": "An infographic that visualizes web visitor session statistics and click paths.",
   "extension": "ifg",
   "folder": [
-    "/Analytics/Clickstream Analytics",
+    "/Applications/Clickstream Analytics",
     "5ef4397c-b071-43be-a282-e537130802df"
   ],
   "modifiedAt": "2016-01-12T19:52:09.000-08:00",
