@@ -1,0 +1,22 @@
+{
+  "createdAt": "2016-01-12T18:35:14.000-08:00",
+  "description": "hidden datastore to upload files: FileUploadDataStore",
+  "extension": "dst",
+  "folder": [
+    "/.system",
+    "505eead2-4131-4290-89b7-0181d88ad500"
+  ],
+  "modifiedAt": "2016-01-12T18:35:14.000-08:00",
+  "name": "FileUploadDataStore",
+  "permission": {
+    "groups": {},
+    "owner": "system",
+    "permissionForOthers": {
+      "executable": true,
+      "readable": true,
+      "writable": true
+    },
+    "publiclyShared": false
+  },
+  "uuid": "ac5cd4b2-a953-4438-83da-29e3fa7ffad1"
+}
