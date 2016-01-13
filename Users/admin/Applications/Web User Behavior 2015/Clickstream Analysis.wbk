@@ -1,0 +1,626 @@
+{
+  "_version": "5.11.2",
+  "dataPermission": {
+    "groups": {},
+    "owner": "admin",
+    "permissionForOthers": false
+  },
+  "errorHandling": {
+    "maxLogErrors": 1000,
+    "mode": "IGNORE"
+  },
+  "file": {
+    "createdAt": "2016-01-12T19:13:29.000-08:00",
+    "description": "",
+    "extension": "wbk",
+    "folder": [
+      "/Users/admin/Applications/Web User Behavior 2015",
+      "6ad206b3-4639-4443-a30f-662e2e3e3779"
+    ],
+    "modifiedAt": "2016-01-12T19:13:29.000-08:00",
+    "name": "Clickstream Analysis",
+    "permission": {
+      "groups": {},
+      "owner": "admin",
+      "permissionForOthers": {
+        "executable": false,
+        "readable": false,
+        "writable": false
+      },
+      "publiclyShared": false
+    },
+    "uuid": "3c53c36a-b5dd-4f50-8a60-549a78996ff5"
+  },
+  "jobConfiguration": {
+    "dataRetentionPolicy": {
+      "_type": "PurgeAfter",
+      "minimumToKeep": 1
+    },
+    "hadoopProperties": {},
+    "logging": {
+      "properties": {}
+    },
+    "triggering": {
+      "_type": "ManualTriggering"
+    }
+  },
+  "notification": {
+    "emailsInCaseOfFailure": [],
+    "emailsInCaseOfSuccess": []
+  },
+  "sheets": [
+    {
+      "_type": "DataSourceReferenceSheet",
+      "uuid": "3cb473d5-420e-4633-b80f-daebb8a0680d",
+      "filter": {
+        "_type": "ColumnBasedSheetFilter",
+        "filterArguments": [
+          {
+            "_type": "ConstantSheetFilterArgument",
+            "constantValue": "html",
+            "column": "request",
+            "expression": "CONTAINS"
+          },
+          {
+            "_type": "ConstantSheetFilterArgument",
+            "constantValue": "300",
+            "column": "status",
+            "expression": "LESS"
+          },
+          {
+            "_type": "NonValueSheetFilterArgument",
+            "column": "remoteUser",
+            "expression": "NOT_EMPTY"
+          }
+        ],
+        "operator": "AND"
+      },
+      "columns": [
+        {
+          "id": "remoteHost",
+          "name": "remoteHost",
+          "position": 0
+        },
+        {
+          "id": "remoteUser",
+          "name": "remoteUser",
+          "position": 1
+        },
+        {
+          "id": "timeEnglishFormat",
+          "name": "timeEnglishFormat",
+          "position": 2
+        },
+        {
+          "id": "request",
+          "name": "request",
+          "position": 3
+        },
+        {
+          "id": "status",
+          "name": "status",
+          "position": 4
+        },
+        {
+          "id": "bytesSent",
+          "name": "bytesSent",
+          "position": 5
+        }
+      ],
+      "identifier": "96b11c1a-4b15-4906-8f57-d091df4622eb",
+      "kept": false,
+      "name": "Clickstream_Data",
+      "position": 0,
+      "selectedPartition": {
+        "formula": "$partition \u003e\u003d ASDATE(\"15-09-2010 01:00:00.000\"; \"dd-MM-yyyy HH:mm:ss.SSS\") \u0026\u0026 $partition \u003c\u003d ASDATE(\"16-09-2010 02:00:00.000\"; \"dd-MM-yyyy HH:mm:ss.SSS\")"
+      }
+    },
+    {
+      "_type": "FormulaSheet",
+      "columns": [
+        {
+          "formula": "\u003d#Clickstream_Data!remoteHost",
+          "id": "0",
+          "name": "IP",
+          "position": 0
+        },
+        {
+          "formula": "\u003d#Clickstream_Data!remoteUser",
+          "id": "1",
+          "name": "User",
+          "position": 1
+        },
+        {
+          "formula": "\u003d#Clickstream_Data!timeEnglishFormat",
+          "id": "2",
+          "name": "Timestamp",
+          "position": 2
+        },
+        {
+          "formula": "\u003dURL_FILE(#Clickstream_Data!request)",
+          "id": "6",
+          "name": "Filename",
+          "position": 3
+        },
+        {
+          "formula": "\u003d#Clickstream_Data!status",
+          "id": "4",
+          "name": "Status",
+          "position": 4
+        },
+        {
+          "formula": "\u003d#Clickstream_Data!bytesSent/1024",
+          "id": "5",
+          "name": "Traffic",
+          "position": 5
+        },
+        {
+          "formula": "\u003dURL_FILE(#Clickstream_Data!request)",
+          "id": "7",
+          "name": "request_FileName",
+          "position": 6
+        }
+      ],
+      "identifier": "d10743e0-c865-4182-8017-ef3d3d6ae3a5",
+      "kept": false,
+      "name": "Format",
+      "position": 1
+    },
+    {
+      "_type": "FormulaSheet",
+      "columns": [
+        {
+          "formula": "\u003dGROUPBY(#Format!User)",
+          "id": "0",
+          "name": "User",
+          "position": 0
+        },
+        {
+          "formula": "\u003dGROUPBYGAP(#Format!Timestamp;5m)",
+          "id": "1",
+          "name": "sessionStart",
+          "position": 1
+        },
+        {
+          "formula": "\u003dGROUPMAX(#Format!Timestamp)",
+          "id": "2",
+          "name": "sessionEnd",
+          "position": 2
+        },
+        {
+          "formula": "\u003dGROUPCOUNT()",
+          "id": "3",
+          "name": "Clicks",
+          "position": 3
+        },
+        {
+          "formula": "\u003dGROUPCONCAT(#Format!Filename;#Format!Timestamp)",
+          "id": "4",
+          "name": "Path",
+          "position": 4
+        },
+        {
+          "formula": "\u003d(#sessionEnd-#sessionStart)/60000",
+          "id": "5",
+          "name": "Mins",
+          "position": 5
+        },
+        {
+          "formula": "\u003dLISTELEMENT(#Path;0)",
+          "id": "6",
+          "name": "LandingPage",
+          "position": 6
+        },
+        {
+          "formula": "\u003dLISTELEMENT(#Path;SIZE(#Path)-1)",
+          "id": "7",
+          "name": "ExitPage",
+          "position": 7
+        }
+      ],
+      "identifier": "2649c35c-6b04-485c-b6d6-0477b0869f6b",
+      "kept": false,
+      "name": "SessionStats",
+      "position": 2
+    },
+    {
+      "_type": "FormulaSheet",
+      "columns": [
+        {
+          "formula": "\u003dGROUPBY(#SessionStats!User)",
+          "id": "0",
+          "name": "User",
+          "position": 0
+        },
+        {
+          "formula": "\u003dGROUPAVERAGE(#SessionStats!Clicks)",
+          "id": "1",
+          "name": "avgClicks",
+          "position": 1
+        },
+        {
+          "formula": "\u003dGROUPAVERAGE(#SessionStats!Mins)",
+          "id": "2",
+          "name": "avgMins",
+          "position": 2
+        }
+      ],
+      "identifier": "c8a6ed0b-6752-47a5-be59-5d597791e0ed",
+      "kept": false,
+      "name": "UserSessionStats",
+      "position": 3
+    },
+    {
+      "_type": "DataSourceReferenceSheet",
+      "uuid": "997d290a-d0f7-42a4-b03b-d68bf32688a2",
+      "columns": [
+        {
+          "id": "ID",
+          "name": "ID",
+          "position": 0
+        },
+        {
+          "id": "User",
+          "name": "User",
+          "position": 1
+        },
+        {
+          "id": "Email",
+          "name": "Email",
+          "position": 2
+        },
+        {
+          "id": "Role",
+          "name": "Role",
+          "position": 3
+        },
+        {
+          "id": "Activated",
+          "name": "Activated",
+          "position": 4
+        }
+      ],
+      "identifier": "117e7e50-688d-47cd-b56e-575b90c30c7b",
+      "kept": false,
+      "name": "Customer_Profile",
+      "position": 4
+    },
+    {
+      "_type": "SingleJoinSheet",
+      "definition": {
+        "left": {
+          "includedColumns": [
+            "User",
+            "avgClicks",
+            "avgMins"
+          ],
+          "joinColumns": [
+            "User"
+          ],
+          "sheetName": "UserSessionStats"
+        },
+        "right": {
+          "includedColumns": [
+            "Email",
+            "Role",
+            "Activated"
+          ],
+          "joinColumns": [
+            "User"
+          ],
+          "sheetName": "Customer_Profile"
+        },
+        "type": "INNER"
+      },
+      "columns": [
+        {
+          "id": "f8cdec2cd275804569059aa7b40b69c2",
+          "name": "UserSessionStats.User",
+          "position": 0
+        },
+        {
+          "id": "aa10510250ccfb02caa399f1d27c6b1f",
+          "name": "UserSessionStats.avgClicks",
+          "position": 1
+        },
+        {
+          "id": "bad987c890285f0371ae752273ab1243",
+          "name": "UserSessionStats.avgMins",
+          "position": 2
+        },
+        {
+          "id": "918d2a481997e9131840e442901828d3",
+          "name": "Customer_Profile.Email",
+          "position": 3
+        },
+        {
+          "id": "d765e916019ef4501dc7226bb120c310",
+          "name": "Customer_Profile.Role",
+          "position": 4
+        },
+        {
+          "id": "00b00c2b65ce31ad8186f087dd6cb5bd",
+          "name": "Customer_Profile.Activated",
+          "position": 5
+        }
+      ],
+      "identifier": "6aabfe9c-73d1-4be8-971e-c9c7e0be1244",
+      "kept": true,
+      "name": "Joined",
+      "position": 5,
+      "sorting": {
+        "arguments": {
+          "UserSessionStats.avgClicks": "DESCENDING"
+        }
+      }
+    },
+    {
+      "_type": "FormulaSheet",
+      "columns": [
+        {
+          "formula": "\u003dGROUPBY(#SessionStats!LandingPage)",
+          "id": "0",
+          "name": "LandingPage",
+          "position": 0
+        },
+        {
+          "formula": "\u003dGROUPCOUNT()",
+          "id": "1",
+          "name": "Count",
+          "position": 1
+        }
+      ],
+      "identifier": "a679212f-5ce3-47a4-b28c-95cecea76036",
+      "kept": true,
+      "name": "TopLandingPages",
+      "position": 6,
+      "sorting": {
+        "arguments": {
+          "Count": "DESCENDING"
+        },
+        "limit": 10
+      }
+    },
+    {
+      "_type": "FormulaSheet",
+      "columns": [
+        {
+          "formula": "\u003dGROUPBY(#SessionStats!ExitPage)",
+          "id": "0",
+          "name": "FalloutPage",
+          "position": 0
+        },
+        {
+          "formula": "\u003dGROUPCOUNT()",
+          "id": "1",
+          "name": "Count",
+          "position": 1
+        }
+      ],
+      "identifier": "c34eb89c-475b-4415-ad4d-9ade68f12c56",
+      "kept": true,
+      "name": "TopFalloutPages",
+      "position": 7,
+      "sorting": {
+        "arguments": {
+          "Count": "DESCENDING"
+        },
+        "limit": 10
+      }
+    },
+    {
+      "_type": "FormulaSheet",
+      "filter": {
+        "_type": "ColumnBasedSheetFilter",
+        "filterArguments": [
+          {
+            "_type": "ConstantSheetFilterArgument",
+            "constantValue": "3",
+            "column": "Clicks",
+            "expression": "GREATER_EQUALS"
+          }
+        ],
+        "operator": "AND"
+      },
+      "columns": [
+        {
+          "formula": "\u003d#SessionStats!User",
+          "id": "0",
+          "name": "User",
+          "position": 0
+        },
+        {
+          "formula": "\u003d#SessionStats!sessionStart",
+          "id": "1",
+          "name": "sessionStart",
+          "position": 1
+        },
+        {
+          "formula": "\u003d#SessionStats!sessionEnd",
+          "id": "2",
+          "name": "sessionEnd",
+          "position": 2
+        },
+        {
+          "formula": "\u003d#SessionStats!Clicks",
+          "id": "3",
+          "name": "Clicks",
+          "position": 3
+        },
+        {
+          "formula": "\u003d#SessionStats!Path",
+          "id": "4",
+          "name": "Path",
+          "position": 4
+        },
+        {
+          "formula": "\u003d#SessionStats!Mins",
+          "id": "5",
+          "name": "Mins",
+          "position": 5
+        },
+        {
+          "formula": "\u003d#SessionStats!LandingPage",
+          "id": "6",
+          "name": "LandingPage",
+          "position": 6
+        },
+        {
+          "formula": "\u003d#SessionStats!ExitPage",
+          "id": "7",
+          "name": "ExitPage",
+          "position": 7
+        }
+      ],
+      "identifier": "7a438838-772a-4e04-9041-26c6995b39ab",
+      "kept": false,
+      "name": "ClickPath3Plus",
+      "position": 8
+    },
+    {
+      "_type": "FormulaSheet",
+      "columns": [
+        {
+          "formula": "\u003dGROUPBY(#ClickPath3Plus!Path+\"\")",
+          "id": "0",
+          "name": "ClickPath",
+          "position": 0
+        },
+        {
+          "formula": "\u003dGROUPCOUNT()",
+          "id": "1",
+          "name": "Count",
+          "position": 1
+        },
+        {
+          "formula": "\u003dGROUPCOUNTDISTINCT(#ClickPath3Plus!User)",
+          "id": "2",
+          "name": "UsersFollowed",
+          "position": 2
+        }
+      ],
+      "identifier": "270a74bd-3662-4fcc-9134-a43b934a9868",
+      "kept": true,
+      "name": "TopClickPaths",
+      "position": 9,
+      "sorting": {
+        "arguments": {
+          "Count": "DESCENDING"
+        },
+        "limit": 10
+      }
+    },
+    {
+      "_type": "FormulaSheet",
+      "columns": [
+        {
+          "formula": "\u003dGROUPBY(#Format!User)",
+          "id": "0",
+          "name": "User",
+          "position": 0
+        },
+        {
+          "formula": "\u003dGROUPBYGAP(#Format!Timestamp;5m)",
+          "id": "1",
+          "name": "sessionStart",
+          "position": 1
+        },
+        {
+          "formula": "\u003dGROUP_PATH_CHANGES(#Format!Filename)",
+          "id": "2",
+          "name": "Path",
+          "position": 2
+        },
+        {
+          "formula": "\u003dJSON_ELEMENT(#Path;0)",
+          "id": "3",
+          "name": "From",
+          "position": 3
+        },
+        {
+          "formula": "\u003dJSON_ELEMENT(#Path;1)",
+          "id": "4",
+          "name": "To",
+          "position": 4
+        },
+        {
+          "formula": "\u003dDENULLIFY(GROUP_DIFF(#Format!Timestamp))/1000",
+          "id": "5",
+          "name": "DwellTimeSecs",
+          "position": 5
+        }
+      ],
+      "identifier": "0b91ad2d-b4c5-4b79-9bc9-17ebcc2d5c57",
+      "kept": false,
+      "name": "ClickPairs",
+      "position": 10
+    },
+    {
+      "_type": "FormulaSheet",
+      "columns": [
+        {
+          "formula": "\u003dGROUPBY(#ClickPairs!From)",
+          "id": "0",
+          "name": "From",
+          "position": 0
+        },
+        {
+          "formula": "\u003dGROUPBY(#ClickPairs!To)",
+          "id": "1",
+          "name": "To",
+          "position": 1
+        },
+        {
+          "formula": "\u003dGROUPCOUNT()",
+          "id": "2",
+          "name": "Count",
+          "position": 2
+        }
+      ],
+      "identifier": "530f1483-b90c-448f-b5ce-6081aebe2c95",
+      "kept": true,
+      "name": "TopMoves",
+      "position": 11
+    },
+    {
+      "_type": "FormulaSheet",
+      "filter": {
+        "_type": "ColumnBasedSheetFilter",
+        "filterArguments": [
+          {
+            "_type": "ConstantSheetFilterArgument",
+            "constantValue": "external",
+            "column": "Page",
+            "expression": "TEXT_NOT_EQUALS"
+          }
+        ],
+        "operator": "AND"
+      },
+      "columns": [
+        {
+          "formula": "\u003dGROUPBY(#ClickPairs!From)",
+          "id": "0",
+          "name": "Page",
+          "position": 0
+        },
+        {
+          "formula": "\u003dGROUPAVERAGE(#ClickPairs!DwellTimeSecs)",
+          "id": "1",
+          "name": "DwellSeconds",
+          "position": 1
+        }
+      ],
+      "identifier": "ebd013c0-83e4-4005-a1a6-55d567454562",
+      "kept": true,
+      "name": "LongestDwellTime",
+      "position": 12,
+      "sorting": {
+        "arguments": {
+          "DwellSeconds": "DESCENDING"
+        },
+        "limit": 10
+      }
+    }
+  ],
+  "properties": {}
+}
