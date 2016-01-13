@@ -1,0 +1,17 @@
+{
+  "hidden": false,
+  "name": "4 Recommendation",
+  "parent": [
+    "/Users/admin/Applications/Smart Analytics Tutorial",
+    "8fd3caca-766c-42bd-bb08-f7255cb18e72"
+  ],
+  "permission": {
+    "groups": {},
+    "owner": "admin",
+    "permissionForOthers": {
+      "readable": false,
+      "writable": false
+    }
+  },
+  "uuid": "f86cba6f-7408-41ea-b318-25b60ac512ae"
+}
