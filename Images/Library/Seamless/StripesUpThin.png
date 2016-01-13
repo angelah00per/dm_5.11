@@ -1,0 +1,22 @@
+{
+  "createdAt": "2016-01-12T18:35:15.000-08:00",
+  "description": "",
+  "extension": "png",
+  "folder": [
+    "/Images/Library/Seamless",
+    "d2c4c854-3484-407c-bdb5-e7b98ee3e22d"
+  ],
+  "modifiedAt": "2016-01-12T18:35:15.000-08:00",
+  "name": "StripesUpThin",
+  "permission": {
+    "groups": {},
+    "owner": "system",
+    "permissionForOthers": {
+      "executable": false,
+      "readable": true,
+      "writable": true
+    },
+    "publiclyShared": false
+  },
+  "uuid": "9aea4eb8-0674-479a-8477-fc678243143a"
+}
