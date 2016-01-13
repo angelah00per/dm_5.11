@@ -1,0 +1,17 @@
+{
+  "hidden": false,
+  "name": "executive",
+  "parent": [
+    "/Users",
+    "a6fb569b-21c3-47bf-8891-6b513af31162"
+  ],
+  "permission": {
+    "groups": {},
+    "owner": "executive",
+    "permissionForOthers": {
+      "readable": false,
+      "writable": false
+    }
+  },
+  "uuid": "aff15a5a-eca9-4fb7-a602-84e11c4dbd5a"
+}
