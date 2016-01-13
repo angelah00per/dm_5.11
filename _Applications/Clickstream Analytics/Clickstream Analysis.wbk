@@ -24,7 +24,7 @@
         "Digital Marketing": {
           "executable": false,
           "readable": true,
-          "writable": false
+          "writable": true
         }
       },
       "owner": "admin",
