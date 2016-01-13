@@ -1,0 +1,17 @@
+{
+  "hidden": false,
+  "name": "FileUploads",
+  "parent": [
+    "/Data",
+    "adc17b76-e13d-4cf1-9896-027531847db1"
+  ],
+  "permission": {
+    "groups": {},
+    "owner": "admin",
+    "permissionForOthers": {
+      "readable": true,
+      "writable": true
+    }
+  },
+  "uuid": "bf0fbca4-6f8e-4c69-a58c-41bf316f3601"
+}
