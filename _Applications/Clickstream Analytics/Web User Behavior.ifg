@@ -19,7 +19,7 @@
     "owner": "admin",
     "permissionForOthers": {
       "executable": false,
-      "readable": false,
+      "readable": true,
       "writable": false
     },
     "publiclyShared": false
