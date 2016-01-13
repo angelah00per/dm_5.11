@@ -29,7 +29,7 @@
       },
       "owner": "admin",
       "permissionForOthers": {
-        "executable": true,
+        "executable": false,
         "readable": false,
         "writable": false
       },
