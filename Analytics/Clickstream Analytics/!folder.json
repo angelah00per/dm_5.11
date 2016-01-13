@@ -9,7 +9,7 @@
     "groups": {},
     "owner": "admin",
     "permissionForOthers": {
-      "readable": false,
+      "readable": true,
       "writable": false
     }
   },
