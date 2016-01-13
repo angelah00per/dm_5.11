@@ -1,0 +1,17 @@
+{
+  "hidden": false,
+  "name": "Images",
+  "parent": [
+    "/",
+    "668df931-37ce-42a8-9604-cd89a9e627d2"
+  ],
+  "permission": {
+    "groups": {},
+    "owner": "admin",
+    "permissionForOthers": {
+      "readable": true,
+      "writable": true
+    }
+  },
+  "uuid": "e9cdcd28-8d9a-4ab2-bd5e-6237b63ca54d"
+}
