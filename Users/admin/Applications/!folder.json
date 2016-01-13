@@ -1,0 +1,17 @@
+{
+  "hidden": false,
+  "name": "Applications",
+  "parent": [
+    "/Users/admin",
+    "adfb74a4-6bed-4317-af4d-e97a61d39be2"
+  ],
+  "permission": {
+    "groups": {},
+    "owner": "admin",
+    "permissionForOthers": {
+      "readable": false,
+      "writable": false
+    }
+  },
+  "uuid": "10686601-9222-4fca-9f6e-f5d45da621f0"
+}
