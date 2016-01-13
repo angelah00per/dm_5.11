@@ -1,0 +1,22 @@
+{
+  "createdAt": "2016-01-12T19:21:57.383-08:00",
+  "description": "",
+  "extension": "upl",
+  "folder": [
+    "/.system",
+    "505eead2-4131-4290-89b7-0181d88ad500"
+  ],
+  "modifiedAt": "2016-01-12T19:21:57.383-08:00",
+  "name": "728fd9db-5cf2-4038-b102-a30316eb094f",
+  "permission": {
+    "groups": {},
+    "owner": "admin",
+    "permissionForOthers": {
+      "executable": false,
+      "readable": false,
+      "writable": false
+    },
+    "publiclyShared": false
+  },
+  "uuid": "4434d158-0d94-450a-a4bc-b06d0db3d035"
+}
