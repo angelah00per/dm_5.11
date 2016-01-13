@@ -30,7 +30,7 @@
       "owner": "admin",
       "permissionForOthers": {
         "executable": true,
-        "readable": true,
+        "readable": false,
         "writable": true
       },
       "publiclyShared": false
