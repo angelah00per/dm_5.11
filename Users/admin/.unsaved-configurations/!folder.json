@@ -1,0 +1,17 @@
+{
+  "hidden": true,
+  "name": ".unsaved-configurations",
+  "parent": [
+    "/Users/admin",
+    "adfb74a4-6bed-4317-af4d-e97a61d39be2"
+  ],
+  "permission": {
+    "groups": {},
+    "owner": "admin",
+    "permissionForOthers": {
+      "readable": false,
+      "writable": false
+    }
+  },
+  "uuid": "e9953030-7854-497b-9fb7-2509f07afc26"
+}
