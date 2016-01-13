@@ -1,0 +1,17 @@
+{
+  "hidden": false,
+  "name": "1 Column Dependencies",
+  "parent": [
+    "/Users/admin/Applications/Smart Analytics Tutorial",
+    "8fd3caca-766c-42bd-bb08-f7255cb18e72"
+  ],
+  "permission": {
+    "groups": {},
+    "owner": "admin",
+    "permissionForOthers": {
+      "readable": false,
+      "writable": false
+    }
+  },
+  "uuid": "b03943de-11b2-4121-9c77-e4b9d7a6753f"
+}
