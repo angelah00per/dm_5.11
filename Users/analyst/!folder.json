@@ -1,0 +1,17 @@
+{
+  "hidden": false,
+  "name": "analyst",
+  "parent": [
+    "/Users",
+    "a6fb569b-21c3-47bf-8891-6b513af31162"
+  ],
+  "permission": {
+    "groups": {},
+    "owner": "analyst",
+    "permissionForOthers": {
+      "readable": false,
+      "writable": false
+    }
+  },
+  "uuid": "21540137-1dc1-4483-abb9-6d015e763d59"
+}
