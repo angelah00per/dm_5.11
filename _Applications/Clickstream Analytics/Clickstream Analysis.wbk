@@ -22,7 +22,7 @@
     "permission": {
       "groups": {
         "Digital Marketing": {
-          "executable": false,
+          "executable": true,
           "readable": true,
           "writable": true
         }
