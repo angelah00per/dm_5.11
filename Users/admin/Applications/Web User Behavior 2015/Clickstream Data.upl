@@ -1,0 +1,22 @@
+{
+  "createdAt": "2016-01-12T19:13:29.000-08:00",
+  "description": "A web server log file, used by several examples, including the Basic Tutorial. This illustrates processing raw, machine-generated data.",
+  "extension": "upl",
+  "folder": [
+    "/Users/admin/Applications/Web User Behavior 2015",
+    "6ad206b3-4639-4443-a30f-662e2e3e3779"
+  ],
+  "modifiedAt": "2016-01-12T19:13:29.000-08:00",
+  "name": "Clickstream Data",
+  "permission": {
+    "groups": {},
+    "owner": "admin",
+    "permissionForOthers": {
+      "executable": false,
+      "readable": false,
+      "writable": false
+    },
+    "publiclyShared": false
+  },
+  "uuid": "3cb473d5-420e-4633-b80f-daebb8a0680d"
+}
