@@ -23,7 +23,7 @@
       "groups": {},
       "owner": "admin",
       "permissionForOthers": {
-        "executable": false,
+        "executable": true,
         "readable": true,
         "writable": true
       },
