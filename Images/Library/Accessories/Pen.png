@@ -1,0 +1,22 @@
+{
+  "createdAt": "2016-01-12T18:35:15.000-08:00",
+  "description": "",
+  "extension": "png",
+  "folder": [
+    "/Images/Library/Accessories",
+    "df12b782-0df6-401c-b075-7f862c997915"
+  ],
+  "modifiedAt": "2016-01-12T18:35:15.000-08:00",
+  "name": "Pen",
+  "permission": {
+    "groups": {},
+    "owner": "system",
+    "permissionForOthers": {
+      "executable": false,
+      "readable": true,
+      "writable": true
+    },
+    "publiclyShared": false
+  },
+  "uuid": "4e7679e3-9b71-4bec-af80-e7e00688413b"
+}
