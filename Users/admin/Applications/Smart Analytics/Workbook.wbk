@@ -17,7 +17,7 @@
       "/Users/admin/Applications/Smart Analytics",
       "8fd3caca-766c-42bd-bb08-f7255cb18e72"
     ],
-    "modifiedAt": "2016-01-13T16:14:15.000-08:00",
+    "modifiedAt": "2016-01-13T16:14:41.000-08:00",
     "name": "Workbook",
     "permission": {
       "groups": {},
@@ -450,6 +450,141 @@
       "kept": true,
       "name": "DecisionTreeSheet1",
       "position": 2
+    },
+    {
+      "_type": "DataMiningKMeansSheet",
+      "normalizeNumericalColumns": true,
+      "numberOfClusters": 3,
+      "numberOfIndicatorValues": 10,
+      "numberOfIterations": 7,
+      "includedColumns": [
+        [
+          "marital",
+          "66061f5d1625cc07a43cce46038d5a08",
+          2,
+          {
+            "type": "STRING"
+          }
+        ],
+        [
+          "education",
+          "6153eb244d20758dd233ae4962a8177f",
+          3,
+          {
+            "type": "STRING"
+          }
+        ],
+        [
+          "default",
+          "7712ce298d4f4af5bf12ce2ec467119c",
+          4,
+          {
+            "type": "STRING"
+          }
+        ]
+      ],
+      "source": "DecisionTreeSheet1",
+      "columns": [
+        {
+          "id": "72e68653b2e3c8c688cf3045844a4b2a",
+          "name": "age",
+          "position": 0
+        },
+        {
+          "id": "ce51f6e17328973f0065e9279d6ce517",
+          "name": "job",
+          "position": 1
+        },
+        {
+          "id": "061fe71e176d12f21e6c3f9f69dc1318",
+          "name": "marital",
+          "position": 2
+        },
+        {
+          "id": "2574c6d03b1f7f2a0231bb5772753a22",
+          "name": "education",
+          "position": 3
+        },
+        {
+          "id": "d78809e855180648f43e203020f4e51b",
+          "name": "default",
+          "position": 4
+        },
+        {
+          "id": "5cf33bb19589f9a43938aaf3e3eae0e3",
+          "name": "balance",
+          "position": 5
+        },
+        {
+          "id": "3487b40996023dab4c18dc4a4fcc208a",
+          "name": "housing",
+          "position": 6
+        },
+        {
+          "id": "605ac74410f6b4d05c1a3670ccbb7d42",
+          "name": "loan",
+          "position": 7
+        },
+        {
+          "id": "49f19d253844346bce1d47dfc65a6d49",
+          "name": "contact",
+          "position": 8
+        },
+        {
+          "id": "1d362d66725b87f5175da3439718ec34",
+          "name": "day",
+          "position": 9
+        },
+        {
+          "id": "e46ea509e4ab381ac31dd15b061ce249",
+          "name": "month",
+          "position": 10
+        },
+        {
+          "id": "0d3f70089b9a55bc2eb507c1bd5764ac",
+          "name": "duration",
+          "position": 11
+        },
+        {
+          "id": "0493a8b18f81c0e8e7f15dfc735e6078",
+          "name": "campaign",
+          "position": 12
+        },
+        {
+          "id": "182661762c77e29ea5ae1f2117bdfcad",
+          "name": "TimeBtwCampaigns",
+          "position": 13
+        },
+        {
+          "id": "97ef8f6f08f99406a9efa6eeb8493793",
+          "name": "NumOfCalls",
+          "position": 14
+        },
+        {
+          "id": "6a2a40ef2289f5bceb30ff4a09753683",
+          "name": "CampaignSuccess",
+          "position": 15
+        },
+        {
+          "id": "3a3049dbc6d623918f688e226af19fd3",
+          "name": "PurchasedProduct",
+          "position": 16
+        },
+        {
+          "id": "3e94c80521b6d0aea456a82ba4fe2b62",
+          "name": "Prediction",
+          "position": 17
+        },
+        {
+          "id": "a3cd1975b4f1d3dc0d708e8089099edc",
+          "name": "ClusterID",
+          "position": 18
+        }
+      ],
+      "identifier": "a8621e35-6df9-498a-b2da-bcd78f822a9f",
+      "kept": true,
+      "name": "ClusteringSheet1",
+      "position": 3
     }
   ],
   "properties": {}
