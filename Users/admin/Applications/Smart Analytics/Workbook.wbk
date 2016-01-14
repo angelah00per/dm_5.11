@@ -17,7 +17,7 @@
       "/Users/admin/Applications/Smart Analytics",
       "8fd3caca-766c-42bd-bb08-f7255cb18e72"
     ],
-    "modifiedAt": "2016-01-13T16:02:17.377-08:00",
+    "modifiedAt": "2016-01-13T16:02:23.646-08:00",
     "name": "Workbook",
     "permission": {
       "groups": {},
@@ -438,6 +438,117 @@
       "kept": true,
       "name": "DecisionTreeSheet1",
       "position": 2
+    },
+    {
+      "_type": "FormulaSheet",
+      "columns": [
+        {
+          "formula": "\u003d#Bank_Data!age",
+          "id": "0",
+          "name": "age",
+          "position": 0
+        },
+        {
+          "formula": "\u003d#Bank_Data!job",
+          "id": "1",
+          "name": "job",
+          "position": 1
+        },
+        {
+          "formula": "\u003d#Bank_Data!marital",
+          "id": "2",
+          "name": "marital",
+          "position": 2
+        },
+        {
+          "formula": "\u003d#Bank_Data!education",
+          "id": "3",
+          "name": "education",
+          "position": 3
+        },
+        {
+          "formula": "\u003d#Bank_Data!default",
+          "id": "4",
+          "name": "default",
+          "position": 4
+        },
+        {
+          "formula": "\u003d#Bank_Data!balance",
+          "id": "5",
+          "name": "balance",
+          "position": 5
+        },
+        {
+          "formula": "\u003d#Bank_Data!housing",
+          "id": "6",
+          "name": "housing",
+          "position": 6
+        },
+        {
+          "formula": "\u003d#Bank_Data!loan",
+          "id": "7",
+          "name": "loan",
+          "position": 7
+        },
+        {
+          "formula": "\u003d#Bank_Data!contact",
+          "id": "8",
+          "name": "contact",
+          "position": 8
+        },
+        {
+          "formula": "\u003d#Bank_Data!day",
+          "id": "9",
+          "name": "day",
+          "position": 9
+        },
+        {
+          "formula": "\u003d#Bank_Data!month",
+          "id": "10",
+          "name": "month",
+          "position": 10
+        },
+        {
+          "formula": "\u003d#Bank_Data!duration",
+          "id": "11",
+          "name": "duration",
+          "position": 11
+        },
+        {
+          "formula": "\u003d#Bank_Data!campaign",
+          "id": "12",
+          "name": "campaign",
+          "position": 12
+        },
+        {
+          "formula": "\u003d#Bank_Data!TimeBtwCampaigns",
+          "id": "13",
+          "name": "TimeBtwCampaigns",
+          "position": 13
+        },
+        {
+          "formula": "\u003d#Bank_Data!NumOfCalls",
+          "id": "14",
+          "name": "NumOfCalls",
+          "position": 14
+        },
+        {
+          "formula": "\u003d#Bank_Data!CampaignSuccess",
+          "id": "15",
+          "name": "CampaignSuccess",
+          "position": 15
+        },
+        {
+          "formula": "\u003d#Bank_Data!PurchasedProduct",
+          "id": "16",
+          "name": "PurchasedProduct",
+          "position": 16
+        }
+      ],
+      "identifier": "5842e46a-f1e3-4fee-a6af-8063591ffcb9",
+      "kept": true,
+      "name": "Sheet1",
+      "position": 3
     }
   ],
   "properties": {}
