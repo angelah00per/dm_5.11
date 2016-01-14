@@ -1,0 +1,22 @@
+{
+  "createdAt": "2016-01-13T16:31:34.935-08:00",
+  "description": "",
+  "extension": "imp",
+  "folder": [
+    "/.system",
+    "505eead2-4131-4290-89b7-0181d88ad500"
+  ],
+  "modifiedAt": "2016-01-13T16:31:34.935-08:00",
+  "name": "8e19b585-15ca-43ac-b89b-a9894d12aaee",
+  "permission": {
+    "groups": {},
+    "owner": "admin",
+    "permissionForOthers": {
+      "executable": false,
+      "readable": false,
+      "writable": false
+    },
+    "publiclyShared": false
+  },
+  "uuid": "2d0fe6b8-2eae-4a14-8b7c-2177d3ee7281"
+}
