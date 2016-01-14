@@ -17,7 +17,7 @@
       "/Users/admin/Applications/Smart Analytics",
       "8fd3caca-766c-42bd-bb08-f7255cb18e72"
     ],
-    "modifiedAt": "2016-01-13T16:02:23.646-08:00",
+    "modifiedAt": "2016-01-13T16:02:29.368-08:00",
     "name": "Workbook",
     "permission": {
       "groups": {},
@@ -547,7 +547,7 @@
       ],
       "identifier": "5842e46a-f1e3-4fee-a6af-8063591ffcb9",
       "kept": true,
-      "name": "Sheet1",
+      "name": "Clusters",
       "position": 3
     }
   ],
