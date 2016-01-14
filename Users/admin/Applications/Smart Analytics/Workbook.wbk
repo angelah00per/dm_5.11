@@ -17,7 +17,7 @@
       "/Users/admin/Applications/Smart Analytics",
       "8fd3caca-766c-42bd-bb08-f7255cb18e72"
     ],
-    "modifiedAt": "2016-01-13T15:57:58.000-08:00",
+    "modifiedAt": "2016-01-13T16:02:17.377-08:00",
     "name": "Workbook",
     "permission": {
       "groups": {},
@@ -342,18 +342,6 @@
         ]
       ],
       "source": "Bank_Data",
-      "filter": {
-        "_type": "ColumnBasedSheetFilter",
-        "filterArguments": [
-          {
-            "_type": "ConstantSheetFilterArgument",
-            "constantValue": "success",
-            "column": "Prediction",
-            "expression": "TEXT_EQUALS"
-          }
-        ],
-        "operator": "AND"
-      },
       "columns": [
         {
           "id": "d2747f737305cfa1436d52faf58fb33c",
